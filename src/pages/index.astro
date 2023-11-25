@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Button} from '@/components/ui/button'
+import Section from '@/components/Section'
+import SuperButton from '@/components/SuperButton';
+---
+
+<Layout title="Лучшие шпатели ИНТЕК на рынке" description='Интек описание'>
+	<Button variant='destructive'>
+		<a href="/about">Go to about page</a>
+	</Button>
+	<Section>
+		The main page
+	</Section>
+	<SuperButton client:load>
+		Press me
+	</SuperButton>
+</Layout>
