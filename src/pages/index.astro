@@ -1,18 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import {Button} from '@/components/ui/button'
-import Section from '@/components/Section'
-import SuperButton from '@/components/SuperButton';
+import AdvanatgesSection from '@/components/AdvanatgesSection';
+import SliderSection from '@/components/SliderSection';
 ---
 
 <Layout title="Лучшие шпатели ИНТЕК на рынке" description='Интек описание'>
-	<Button variant='destructive'>
-		<a href="/about">Go to about page</a>
-	</Button>
-	<Section>
-		The main page
-	</Section>
-	<SuperButton client:load>
-		Press me
-	</SuperButton>
+	<Image src='/images/main-image.png' alt="Инструменты высшего класса, большой выбор инструмента" width='1200' height='258' class='my-4'/>
+	<AdvanatgesSection/>
+	<SliderSection />
 </Layout>

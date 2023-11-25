@@ -7,6 +7,9 @@ export interface Props {
 const {title, description} = Astro.props;
 
 import BaseHead from '@/components/Head/BaseHead.astro';
+import Header from '@/components/LayoutComponents/Header'
+import Catalog from '@/components/LayoutComponents/Catalog'
+import {Separator} from '@/components/ui/separator'
 import '@/styles/globals.css'
 ---
 
@@ -15,8 +18,14 @@ import '@/styles/globals.css'
 	<head>
 		<BaseHead title={title} description={description}/>
 	</head>
-	<body>
-		<slot />
+	<body class="w-full flex flex-col justify-center items-center">
+		<div class="max-w-[1200px] w-full px-2">
+			<Header/>
+			<Separator/>
+			<Catalog client:load/>
+			<Separator/>
+			<slot />
+		</div>
 	</body>
 </html>
 	
