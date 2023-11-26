@@ -3,10 +3,12 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import AdvanatgesSection from '@/components/AdvanatgesSection';
 import SliderSection from '@/components/SliderSection';
+import UyutSection from '@/components/UyutSection';
 ---
 
 <Layout title="Лучшие шпатели ИНТЕК на рынке" description='Интек описание'>
 	<Image src='/images/main-image.png' alt="Инструменты высшего класса, большой выбор инструмента" width='1200' height='258' class='my-4'/>
 	<AdvanatgesSection/>
-	<SliderSection />
+	<SliderSection client:load/>
+	<UyutSection/>
 </Layout>
