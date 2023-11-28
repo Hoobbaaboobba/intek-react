@@ -12,7 +12,7 @@ const buttons = [
 
 const MobileMenu = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-white px-4 py-1 z-30 lg:hidden fixed bottom-0 left-0 gap-6">
+    <div className="w-full flex justify-center items-center bg-white px-4 py-2 z-30 lg:hidden fixed bottom-0 left-0 gap-6">
       {buttons.map((button) => (
         <div className="flex flex-col justify-center items-center gap-1">
           <Button variant="black" size="icon">
