@@ -11,6 +11,7 @@ import Header from '@/components/LayoutComponents/Header'
 import Catalog from '@/components/LayoutComponents/Catalog'
 import {Separator} from '@/components/ui/separator'
 import '@/styles/globals.css'
+import MobileMenu from '@/components/MobileMenu';
 ---
 
 <!doctype html>
@@ -21,9 +22,10 @@ import '@/styles/globals.css'
 	<body class="w-full flex flex-col justify-center items-center">
 		<div class="max-w-[1200px] w-full px-2">
 			<Header/>
-			<Separator/>
+			<Separator className='hidden lg:block'/>
 			<Catalog client:load/>
-			<Separator/>
+			<Separator className='hidden lg:block'/>
+			<MobileMenu/>
 			<slot />
 		</div>
 	</body>

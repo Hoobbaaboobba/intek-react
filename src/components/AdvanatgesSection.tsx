@@ -2,7 +2,7 @@ import { Truck } from "lucide-react";
 
 const AdvanatgesSection = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 italic">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 italic mt-6">
       <a
         href="/dostavka-i-oplata"
         className="flex flex-col justify-center items-center group"
