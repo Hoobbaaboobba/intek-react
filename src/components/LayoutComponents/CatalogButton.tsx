@@ -22,8 +22,8 @@ const CatalogButton = () => {
       <div
         onMouseLeave={() => setCatalog(false)}
         className={`${
-          catalog ? "opacity-100" : "opacity-0"
-        } transition duration-300 absolute top-[60px] shadow-lg rounded-b-lg bg-white z-20 w-full flex p-4 h-[330px]`}
+          catalog ? "flex" : "hidden"
+        } transition duration-300 absolute top-[60px] shadow-lg rounded-b-lg bg-white z-20 w-full p-4 h-[330px]`}
       >
         <div className="flex gap-1">
           <div className="flex flex-col justify-start items-start h-full gap-2">

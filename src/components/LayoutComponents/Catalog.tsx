@@ -22,7 +22,7 @@ export const buttons = [
 
 const Catalog = () => {
   return (
-    <div className="w-full justify-between items-center relative hidden lg:flex">
+    <div className="w-full sticky top-0 left-0 justify-between items-center bg-white z-40 hidden lg:flex">
       <CatalogButton />
       <div className="py-4 flex">
         {buttons.map((button, index) => (

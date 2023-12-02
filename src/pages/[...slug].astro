@@ -1,0 +1,21 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import {pagesData} from '../../pagesData'
+import LinkRoad from "@/components/CardPage/LinkRoad";
+import { TabsComponent } from "@/components/CardPage/TabsComponent";
+
+const pages = pagesData
+
+const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
+const { title, description, img, type, material, amount, from } = page;
+--- 
+
+<Layout title={title} description={description}>
+    <div class="mt-9 mb-16">
+        <LinkRoad linkName={from} />
+        <h1 class="text-4xl font-bold mt-2 mb-6">{title}</h1>
+        <TabsComponent form="" material="" lever="" amount="" type={type} description={description} client:load/>
+    </div>
+</Layout>
