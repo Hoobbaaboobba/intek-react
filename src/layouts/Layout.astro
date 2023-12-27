@@ -7,12 +7,10 @@ export interface Props {
 const {title, description} = Astro.props;
 
 import BaseHead from '@/components/Head/BaseHead.astro';
-import Header from '@/components/LayoutComponents/Header'
-import Catalog from '@/components/LayoutComponents/Catalog'
-import {Separator} from '@/components/ui/separator'
+import Header from '@/components/Global/Header/Header'
 import '@/styles/globals.css'
-import MobileMenu from '@/components/MobileMenu';
-import Footer from '@/components/Footer';
+
+const canonicalURL = Astro.url.pathname
 ---
 
 <!doctype html>
@@ -21,15 +19,8 @@ import Footer from '@/components/Footer';
 		<BaseHead title={title} description={description}/>
 	</head>
 	<body class="w-full flex flex-col justify-center items-center">
-		<div class="max-w-[1200px] w-full px-2">
-			<Header/>
-			<Separator className='hidden lg:block'/>
-			<Catalog client:load/>
-			<Separator className='hidden lg:block'/>
-			<MobileMenu/>
-			<slot />
-		</div>
-		<Footer/>
+		<Header url={canonicalURL} client:load/>
+		<slot />
 	</body>
 </html>
 	

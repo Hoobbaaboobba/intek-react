@@ -6,14 +6,35 @@
   font-family: "Jost", sans-serif;
 }
 
-body,
-html {
-  overflow-x: hidden;
-  overflow-y: auto;
+.highlighted a {
+  position: relative;
+}
+
+.highlighted a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 150ms;
+}
+
+.highlighted:hover a::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 150ms;
 }
 
 @layer base {
   :root {
+    --main-blue: #1f79f8;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
