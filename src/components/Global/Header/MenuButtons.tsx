@@ -31,8 +31,9 @@ const MenuButtons = ({ url }: Props) => {
   const splittedUrl = url.split("/")[1];
   return (
     <div className="hidden lg:block">
-      {buttons.map((button) => (
+      {buttons.map((button, index) => (
         <Button
+          key={index}
           className={`highlighted ${
             splittedUrl === button.href.split("/")[1]
               ? "selected bg-main-blue text-white"

@@ -18,7 +18,7 @@ const canonicalURL = Astro.url.pathname
 	<head>
 		<BaseHead title={title} description={description}/>
 	</head>
-	<body class="w-full flex flex-col justify-center items-center">
+	<body class="w-full flex flex-col justify-center items-center bg-white">
 		<Header url={canonicalURL} client:load/>
 		<slot />
 	</body>

@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import InfoSection from '@/components/Pages/MainPage/InfoSection'
+import MenuSection from '@/components/Pages/MenuSection/MenuSection'
+import StorageSection from '@/components/Pages/StorageSection/StorageSection'
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="Лучшие шпатели ИНТЕК на рынке" description='Интек описание'>
@@ -12,4 +15,6 @@ import InfoSection from '@/components/Pages/MainPage/InfoSection'
 	<div class="px-8 z-10">
 		<InfoSection/>
 	</div>
+	<MenuSection/>
+	<StorageSection/>
 </Layout>

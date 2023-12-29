@@ -1,0 +1,55 @@
+import { Separator } from "@/components/ui/separator";
+import MenuSectionCard from "./MenuSectionCard";
+
+const cards = [
+  {
+    title: "Каталог",
+    description:
+      "Наш разнообразный каталог шпателей ИНТЕК предлагает широкий выбор высококачественных инструментов для различных строительных и отделочных задач.",
+    src: "menu-catalog.png",
+    href: "/",
+  },
+  {
+    title: "Доставка",
+    description:
+      "Наша служба доставки гарантирует быстрое и надежное получение ваших заказов, чтобы вы могли наслаждаться покупками без лишних забот.",
+    src: "menu-delivery.png",
+    href: "/",
+  },
+  {
+    title: "Сертификаты",
+    description:
+      "Наши продукты поставляются с высокими стандартами качества, подтвержденными соответствующими сертификатами, чтобы обеспечить клиентам уверенность в надежности и безопасности наших товаров.",
+    src: "menu-certificates.png",
+    href: "/",
+  },
+  {
+    title: "Контакты",
+    description:
+      "Не стесняйтесь связаться с нами для получения дополнительной информации или консультации: наши контактные данные всегда открыты для вас.",
+    src: "menu-contacts.png",
+    href: "/",
+  },
+];
+
+const MenuSection = () => {
+  return (
+    <div className="relative mt-[100px] flex w-full items-center justify-center px-8">
+      <div className="grid w-full max-w-[1300px] grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {cards.map((card, index) => (
+          <>
+            <MenuSectionCard
+              key={index}
+              href={card.href}
+              src={card.src}
+              title={card.title}
+              description={card.description}
+            />
+          </>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default MenuSection;

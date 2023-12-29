@@ -4,7 +4,7 @@ import { Quote } from "lucide-react";
 const FirstText = () => {
   return (
     <div className="flex w-full flex-col gap-4 px-1 py-8 sm:p-8">
-      <Quote />
+      <Quote size={32} color="#2966BA" />
       <h1 className="text-xl">
         Коллектив ИНТЕК усердно действует на протяжении всей территории России,
         стремясь предоставить более устойчивые, безопасные и эффективные решения
