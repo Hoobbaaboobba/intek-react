@@ -1,0 +1,27 @@
+---
+import { Image, getImage } from 'astro:assets';
+
+interface Props {
+  src: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+const {href, src, title, description} = Astro.props
+---
+<div class="flex w-full items-start justify-center">
+  <a
+      href={href}
+      class="flex w-full max-w-[270px] flex-col items-start justify-start gap-2"
+    >
+      <Image
+        src={`/images/${src}`}
+        alt={`${title} ИНТЕК`}
+        width="270"
+        height="200"
+      />
+      <h1 class="under text-3xl text-dark-gray">{title}</h1>
+      <p class="font-light text-dark-gray">{description}</p>
+    </a>
+</div>

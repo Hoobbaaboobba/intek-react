@@ -1,0 +1,21 @@
+---
+import BlueSquare from "@/components/Global/BlueSquare.astro";
+import { Image } from "astro:assets";
+
+---
+
+
+    <div class="relative">
+      <Image
+        src="/images/two-people.png"
+        alt="Дискуссия двух людей"
+        class="h-full w-full"
+        width='435'
+        height='465'
+      />
+      <div class="absolute bottom-0 left-0 flex w-full items-center justify-between bg-black/70 pl-4 text-white backdrop-blur-lg">
+        <span class="text-xl font-semibold">Больше об «ИНТЕК»</span>
+        <BlueSquare />
+      </div>
+    </div>
+

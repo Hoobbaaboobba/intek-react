@@ -1,0 +1,26 @@
+---
+import BlueSquare from "@/components/Global/BlueSquare.astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  src: string;
+  title: string;
+}
+
+const {src, title} = Astro.props
+---
+    <a
+      href="/"
+      class="group relative h-full w-full overflow-hidden border border-border"
+    >
+      <Image
+        src={`/images/${src}`}
+        alt={title}
+        width='301'
+        height='216'
+      />
+      <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border bg-white text-center text-dark-gray transition xl:-translate-x-[70%] xl:group-hover:translate-x-0">
+        <div class="w-full p-2 text-center">{title}</div>
+        <BlueSquare />
+      </div>
+    </a>

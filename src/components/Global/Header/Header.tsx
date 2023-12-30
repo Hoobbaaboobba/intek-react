@@ -1,9 +1,9 @@
 import { Separator } from "@/components/ui/separator";
-import Logo from "./Logo";
 import MenuButtons from "./MenuButtons";
 import Contacts from "./Contacts";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
+import Logo from "./Logo.tsx";
 
 interface Props {
   url: any;

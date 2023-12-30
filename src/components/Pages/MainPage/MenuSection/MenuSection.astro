@@ -1,5 +1,6 @@
+---
 import { Separator } from "@/components/ui/separator";
-import MenuSectionCard from "./MenuSectionCard";
+import MenuSectionCard from "./MenuSectionCard.astro";
 
 const cards = [
   {
@@ -31,25 +32,18 @@ const cards = [
     href: "/",
   },
 ];
+---
 
-const MenuSection = () => {
-  return (
-    <div className="relative mt-[100px] flex w-full items-center justify-center px-8">
-      <div className="grid w-full max-w-[1300px] grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {cards.map((card, index) => (
-          <>
-            <MenuSectionCard
-              key={index}
-              href={card.href}
-              src={card.src}
-              title={card.title}
-              description={card.description}
-            />
-          </>
+<div class="relative mt-[100px] flex w-full items-center justify-center px-8">
+  <div class="grid w-full max-w-[1300px] grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {cards.map((card, index) => (
+          <MenuSectionCard
+            href={card.href}
+            src={card.src}
+            title={card.title}
+            description={card.description}
+          />
         ))}
-      </div>
     </div>
-  );
-};
+</div>
 
-export default MenuSection;
