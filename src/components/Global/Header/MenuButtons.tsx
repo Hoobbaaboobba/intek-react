@@ -7,11 +7,11 @@ export const buttons = [
   },
   {
     title: "Каталог",
-    href: "/catalog",
+    href: "/katalog-tovarov",
   },
   {
     title: "Контакты",
-    href: "/contacts",
+    href: "/kontakt",
   },
   {
     title: "Доставка",
@@ -19,7 +19,7 @@ export const buttons = [
   },
   {
     title: "О компании",
-    href: "/about",
+    href: "/o-kompanii",
   },
 ];
 

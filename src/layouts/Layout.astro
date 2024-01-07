@@ -9,6 +9,7 @@ const {title, description} = Astro.props;
 import BaseHead from '@/components/Head/BaseHead.astro';
 import Header from '@/components/Global/Header/Header'
 import '@/styles/globals.css'
+import { ViewTransitions } from 'astro:transitions';
 
 const canonicalURL = Astro.url.pathname
 ---
@@ -17,6 +18,7 @@ const canonicalURL = Astro.url.pathname
 <html lang="ru">
 	<head>
 		<BaseHead title={title} description={description}/>
+		<ViewTransitions/>
 	</head>
 	<body class="w-full flex flex-col justify-center items-center bg-white">
 		<Header url={canonicalURL} client:load/>
