@@ -15,8 +15,8 @@ const MobileMenu = () => {
         <Logo />
         <Separator />
         <ul className="flex flex-col gap-6 py-8 text-dark-gray">
-          {buttons.map((button) => (
-            <li className="text-xl">
+          {buttons.map((button, index) => (
+            <li className="text-xl" key={index}>
               <a href={button.href}>{button.title}</a>
             </li>
           ))}
