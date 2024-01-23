@@ -44,7 +44,7 @@ const MenuButtons = ({ url }: Props) => {
             href={`${button.href}`}
             className={`${
               splittedUrl === button.href.split("/")[1] ? "selected" : ""
-            }`}
+            } font-normal`}
           >
             {button.title}
           </a>

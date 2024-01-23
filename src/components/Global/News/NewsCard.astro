@@ -1,0 +1,20 @@
+---
+interface Props {
+    image: string;
+    subLabel: string;
+    title: string;
+    description: string;
+}
+const {image, subLabel, title, description}:Props = Astro.props
+---
+
+<div class="w-full flex flex-col justify-start items-start text-dark-gray">
+    <div class={`w-full bg-[url('/images/newsPhotoOne.png')] bg-cover bg-center h-[200px]`}>
+    </div>
+    <h4 class="text-sm text-primary/40 mb-4 mt-1">{subLabel}</h4>
+    <div class="flex flex-col justify-start items-start gap-2">
+        <h2 class="text-2xl font-semibold leading-6">{title}</h2>
+        <h3 class="text-sm text-light text-primary/50">{description}</h3>
+        <button class="under text-lg font-bold">Читать далее</button>
+    </div>
+</div>

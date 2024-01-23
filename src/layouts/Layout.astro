@@ -10,6 +10,9 @@ import BaseHead from '@/components/Head/BaseHead.astro';
 import Header from '@/components/Global/Header/Header'
 import '@/styles/globals.css'
 import { ViewTransitions } from 'astro:transitions';
+import ReviewsSection from '@/components/Global/ReviewsSection/ReviewsSection'
+import NewsSection from '@/components/Global/News/NewsSection.astro'
+import SubscribeSection from '@/components/Global/Subscribe/SubscribeSection.astro'
 
 const canonicalURL = Astro.url.pathname
 ---
@@ -23,6 +26,9 @@ const canonicalURL = Astro.url.pathname
 	<body class="w-full flex flex-col justify-center items-center bg-white">
 		<Header url={canonicalURL} client:load/>
 		<slot />
+		<NewsSection/>
+		<ReviewsSection client:load/>
+		<SubscribeSection/>
 	</body>
 </html>
 	

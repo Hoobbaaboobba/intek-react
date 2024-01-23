@@ -30,7 +30,7 @@ const Header = ({ url }: Props) => {
       <div className="w-full px-8 py-4 lg:px-12">
         <Contacts />
         <Separator className="hidden lg:block" />
-        <div className="flex w-full items-center justify-between lg:pt-2">
+        <div className="flex w-full items-center justify-between lg:pt-4">
           <Logo />
           <MenuButtons url={url} />
           <div className="block lg:hidden">
