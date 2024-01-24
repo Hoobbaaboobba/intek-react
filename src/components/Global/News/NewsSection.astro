@@ -32,12 +32,13 @@ const newsData = [
         <h1 class='text-4xl font-semibold text-dark-gray'>Новости компании ИНТЕК</h1>
     </div>
     <div class="max-w-[1300px] w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mb-16 gap-6">
-        {newsData.map((item) => (
+        {newsData.map((item, index) => (
             <NewsCard 
                 image={item.image} 
                 subLabel={item.subLabel} 
                 title={item.title} 
                 description={item.desription} 
+                index={index}
             />
         ))}
     </div>

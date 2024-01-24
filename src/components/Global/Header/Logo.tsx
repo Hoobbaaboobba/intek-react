@@ -1,9 +1,9 @@
-import React from "react";
+import LogoImg from "../../../assets/blue-logo.webp";
 
 const Logo = () => {
   return (
     <a href="/">
-      <img src="/images/blue-logo.png" alt="Синий логотип ИНТЕК" />
+      <img src={LogoImg.src} alt="Синий логотип ИНТЕК" />
     </a>
   );
 };

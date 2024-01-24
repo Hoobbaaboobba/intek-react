@@ -9,9 +9,7 @@ const YandexMap = () => {
             defaultState={{
               center: [55.92, 37.67],
               zoom: 9,
-              controls: ["zoomControl", "fullscreenControl"],
             }}
-            modules={["control.ZoomControl", "control.FullscreenControl"]}
             width={700}
             height={400}
           >
@@ -25,9 +23,7 @@ const YandexMap = () => {
             defaultState={{
               center: [55.92, 37.67],
               zoom: 9,
-              controls: ["zoomControl", "fullscreenControl"],
             }}
-            modules={["control.ZoomControl", "control.FullscreenControl"]}
             width={350}
             height={250}
           >

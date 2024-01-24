@@ -2,6 +2,8 @@
 import { Image } from "astro:assets"
 import { YoutubeIcon } from "lucide-react"
 
+import whiteLogo from '../../../assets/white-logo.png'
+
 const mainButtons = [
     {
         label: 'Главная',
@@ -72,7 +74,7 @@ const otherButtons = [
     <div class="w-full flex-col max-w-[1300px] flex justify-center items-center">
         <div class="w-full flex flex-col md:flex-row justify-center items-center text-center md:text-start md:items-start md:justify-between">
             <div class="flex flex-col w-ful">
-                <Image src='/images/white-logo.png' alt='Белый логотип ИНТЕК' width={220} height={69} />
+                <Image src={whiteLogo} format="avif" alt='Белый логотип ИНТЕК' width={220} height={69} />
                 <ul class="flex flex-col gap-4 mt-4">
                     {mainButtons.map((button) => (
                         <li class="text-white text-lg">

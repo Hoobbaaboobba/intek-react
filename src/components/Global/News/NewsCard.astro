@@ -1,15 +1,16 @@
 ---
 interface Props {
-    image: string;
+    image: any;
     subLabel: string;
     title: string;
     description: string;
+    index: number;
 }
-const {image, subLabel, title, description}:Props = Astro.props
+const {subLabel, title, description, index}:Props = Astro.props
 ---
 
 <div class="w-full flex flex-col justify-start items-start text-dark-gray">
-    <div class={`w-full bg-[url('/images/newsPhotoOne.png')] bg-cover bg-center h-[200px]`}>
+    <div class={`w-full ${index === 0 && 'newsPhotoOne'} ${index === 1 && 'newsPhotoTwo'} ${index === 2 && 'newsPhotoThree'} bg-cover bg-center h-[200px]`}>
     </div>
     <h4 class="text-sm text-primary/40 mb-4 mt-1">{subLabel}</h4>
     <div class="flex flex-col justify-start items-start gap-2">

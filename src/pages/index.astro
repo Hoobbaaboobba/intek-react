@@ -11,7 +11,7 @@ import {DiagrammIncome} from '@/components/Pages/MainPage/Diagramm/DiagrammIncom
 ---
 
 <Layout title="Лучшие шпатели ИНТЕК на рынке" description='Интек описание'>
-	<div class="bg-[url('/images/main-photo.png')] w-full bg-center bg-cover h-[516px] absolute top-0 left-0"></div>
+	<div class="bg-[url('../assets/main-photo.webp')] w-full bg-center bg-cover h-[516px] absolute top-0 left-0"></div>
 	<div class="max-w-[1300px] px-8 w-full text-white z-10 mt-32 sm:mt-48 flex flex-col gap-4">
 		<h1 class="text-3xl sm:text-5xl font-semibold">Добро Пожаловать в ИНТЕК</h1>
 		<p class="text-xl sm:text-3xl">ИНТЕК – ваш надежный партнёр в мире отделочных материалов! Наши высококачественные шпатели станут незаменимым инструментом в руках профессионалов и любителей, обеспечивая легкость и точность в каждом движении.</p>
@@ -23,7 +23,7 @@ import {DiagrammIncome} from '@/components/Pages/MainPage/Diagramm/DiagrammIncom
 	<StorageSection />
 	<CatalogSection />
 	<SliderSection client:load/>
-	<DiagrammAmount client:load/>
-	<DiagrammIncome client:load/>
-	<YandexMapSection client:load/>
+	<DiagrammAmount client:visible/>
+	<DiagrammIncome client:visible/>
+	<YandexMapSection client:visible/>
 </Layout>

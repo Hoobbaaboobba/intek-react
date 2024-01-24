@@ -8,7 +8,7 @@ const SliderCard = ({
   description,
   alt,
 }: {
-  image: string;
+  image: any;
   title: string;
   description: string;
   alt: string;
@@ -16,11 +16,7 @@ const SliderCard = ({
   return (
     <div className="grid w-full grid-cols-1 xl:grid-cols-2">
       <div className="relative h-full w-full">
-        <img
-          src={`/images/${image}`}
-          alt={alt}
-          className="h-full w-full bg-contain"
-        />
+        <img src={image} alt={alt} className="h-full w-full bg-contain" />
         <a href="/">
           <div className="absolute bottom-0 left-0 flex h-[65px] w-full items-center justify-between bg-black/70 pl-4 text-white backdrop-blur-lg">
             <span className="text-xl font-semibold">

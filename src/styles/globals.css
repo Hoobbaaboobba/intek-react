@@ -10,6 +10,18 @@
   position: relative;
 }
 
+.newsPhotoOne {
+  background-image: url("../assets/newsPhotoOne.webp");
+}
+
+.newsPhotoTwo {
+  background-image: url("../assets/newsPhotoTwo.webp");
+}
+
+.newsPhotoThree {
+  background-image: url("../assets/newsPhotoThree.webp");
+}
+
 .footerLinks::after {
   content: "";
   position: absolute;

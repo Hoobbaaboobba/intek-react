@@ -1,34 +1,37 @@
 ---
-import { Separator } from "@/components/ui/separator";
 import MenuSectionCard from "./MenuSectionCard.astro";
+import MenuCatalog from '../../../../assets/menu-catalog.png'
+import MenuDelivery from '../../../../assets/menu-delivery.png'
+import MenuCertificates from '../../../../assets/menu-certificates.png'
+import MenuContacts from '../../../../assets/menu-contacts.png'
 
 const cards = [
   {
     title: "Каталог",
     description:
       "Наш разнообразный каталог шпателей ИНТЕК предлагает широкий выбор высококачественных инструментов для различных строительных и отделочных задач.",
-    src: "menu-catalog.png",
+    src: MenuCatalog,
     href: "/",
   },
   {
     title: "Доставка",
     description:
       "Наша служба доставки гарантирует быстрое и надежное получение ваших заказов, чтобы вы могли наслаждаться покупками без лишних забот.",
-    src: "menu-delivery.png",
+    src: MenuDelivery,
     href: "/",
   },
   {
     title: "Сертификаты",
     description:
       "Наши продукты поставляются с высокими стандартами качества, подтвержденными соответствующими сертификатами, чтобы обеспечить клиентам уверенность в надежности и безопасности наших товаров.",
-    src: "menu-certificates.png",
+    src: MenuCertificates,
     href: "/",
   },
   {
     title: "Контакты",
     description:
       "Не стесняйтесь связаться с нами для получения дополнительной информации или консультации: наши контактные данные всегда открыты для вас.",
-    src: "menu-contacts.png",
+    src: MenuContacts,
     href: "/",
   },
 ];
