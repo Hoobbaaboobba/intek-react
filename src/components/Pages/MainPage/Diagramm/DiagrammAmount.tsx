@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { MoveUpIcon } from "lucide-react";
 
 const data = [
   {

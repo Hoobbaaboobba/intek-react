@@ -1,4 +1,4 @@
----
+<!-- ---
 import Layout from "@/layouts/Layout.astro";
 import {pagesData} from '../../pagesData'
 
@@ -15,9 +15,9 @@ export async function getStaticPaths() {
 
 export const prerender = true;
 
-const {title, description, lever, img, form, type, material, amount, from } = Astro.props
+const {title, description } = Astro.props
 --- 
 
 <Layout title={title} description={description}>
 
-</Layout>
+</Layout> -->

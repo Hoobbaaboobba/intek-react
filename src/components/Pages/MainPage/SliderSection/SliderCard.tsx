@@ -1,4 +1,3 @@
-import BlueSquare from "@/components/Global/BlueSquare.astro";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
