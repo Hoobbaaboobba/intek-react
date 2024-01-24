@@ -25,16 +25,17 @@ export const buttons = [
 
 interface Props {
   url: any;
+  more40: boolean;
 }
 
-const MenuButtons = ({ url }: Props) => {
+const MenuButtons = ({ url, more40 }: Props) => {
   const splittedUrl = url.split("/")[1];
   return (
     <div className="hidden lg:block">
       {buttons.map((button, index) => (
         <Button
           key={index}
-          className={`highlighted ${
+          className={`highlighted ${more40 ? "text-dark-gray" : "text-white"} ${
             splittedUrl === button.href.split("/")[1]
               ? "selected bg-main-blue text-white"
               : ""

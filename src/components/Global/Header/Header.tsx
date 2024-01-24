@@ -25,14 +25,16 @@ const Header = ({ url }: Props) => {
     <header
       className={`${
         navbar ? "lg:translate-y-[-40px]" : "lg:translate-y-0"
-      } fixed left-0 top-0 z-30 flex w-full items-center justify-center bg-white/80 shadow-md backdrop-blur-lg transition`}
+      } fixed left-0 top-0 z-30 flex w-full items-center justify-center ${
+        navbar ? "bg-white/80" : "bg-black/20"
+      } shadow-md backdrop-blur-lg transition`}
     >
       <div className="w-full px-8 py-4 lg:px-12">
-        <Contacts />
-        <Separator className="hidden lg:block" />
+        <Contacts more40={navbar} />
+        <Separator className="hidden opacity-30 lg:block" />
         <div className="flex w-full items-center justify-between lg:pt-4">
-          <Logo />
-          <MenuButtons url={url} />
+          <Logo more40={navbar} />
+          <MenuButtons url={url} more40={navbar} />
           <div className="block lg:hidden">
             <MobileMenu />
           </div>
