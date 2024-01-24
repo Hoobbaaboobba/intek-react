@@ -1,7 +1,7 @@
 import LogoImg from "../../../assets/blue-logo.webp";
 import LogoWhite from "../../../assets/white-logo.png";
 
-const Logo = ({ more40 }: { more40: boolean }) => {
+const Logo = ({ more40 }: { more40?: boolean }) => {
   return (
     <a href="/">
       {more40 ? (
