@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets"
+import { YoutubeIcon } from "lucide-react"
+
+const mainButtons = [
+    {
+        label: 'Главная',
+        href: '/',
+    },
+    {
+        label: 'Доставка и оплата',
+        href: '/',
+    },
+    {
+        label: 'О компании',
+        href: '/',
+    },
+    {
+        label: 'Партнёры',
+        href: '/',
+    },
+    {
+        label: 'СОУТ',
+        href: '/',
+    },
+    {
+        label: 'Контакты',
+        href: '/',
+    },
+]
+
+const catalogButtons = [
+    {
+        label: 'Шпателя',
+        href: '/',
+    },
+    {
+        label: 'Гладилки',
+        href: '/',
+    },
+    {
+        label: 'Терки',
+        href: '/',
+    },
+    {
+        label: 'Брусы и сеткодержатели',
+        href: '/',
+    },
+    {
+        label: 'Кельмы и мастерки',
+        href: '/',
+    },
+    {
+        label: 'Щеточные изделия',
+        href: '/',
+    },
+]
+
+const otherButtons = [
+    {
+        label: 'Новая продукция',
+        href: '/'
+    },
+    {
+        label: 'Товары со скидкой',
+        href: '/'
+    },
+]
+---
+
+<footer class="w-full bg-black flex justify-center items-center py-16 px-4">
+    <div class="w-full flex-col max-w-[1300px] flex justify-center items-center">
+        <div class="w-full flex flex-col md:flex-row justify-center items-center text-center md:text-start md:items-start md:justify-between">
+            <div class="flex flex-col w-ful">
+                <Image src='/images/white-logo.png' alt='Белый логотип ИНТЕК' width={220} height={69} />
+                <ul class="flex flex-col gap-4 mt-4">
+                    {mainButtons.map((button) => (
+                        <li class="text-white text-lg">
+                            <a href={button.href} class="footerLinks font-light">{button.label}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div class="flex flex-col w-ful py-4">
+                <h2 class="text-white text-4xl font-semibold">Каталог товаров</h2>
+                <ul class="flex flex-col gap-4 mt-6">
+                    {catalogButtons.map((button) => (
+                        <li class="text-white text-lg">
+                            <a href={button.href} class="footerLinks font-light">{button.label}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div class="flex flex-col w-ful py-4">
+                <h2 class="text-white text-4xl font-semibold">Прочее</h2>
+                <ul class="flex flex-col gap-4 mt-6">
+                    {otherButtons.map((button) => (
+                        <li class="text-white text-lg">
+                            <a href={button.href} class="footerLinks font-light">{button.label}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+        <div class="w-full flex justify-center items-center gap-8 my-6"> 
+            <div class="w-full bg-white h-[1px]"></div>
+            <ul class="flex text-white gap-12">
+                <li>
+                    <a href="/">
+                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
+                    </a>
+                </li>
+            </ul>
+            <div class="w-full bg-white h-[1px]"></div>
+        </div>
+        <span class="text-white font-light">© 2024 ООО «ИНТЕК». Все права защищены.</span>
+        <div class="bg-white w-[150px] h-[1px] my-6"></div>
+        <p class="text-white font-light">Сделано by <a href='/' class="text-main-blue font-normal hover:text-main-blue/80 transition">Alexey Matveev</a></p>
+    </div>
+</footer>

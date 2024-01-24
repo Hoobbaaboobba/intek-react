@@ -6,6 +6,32 @@
   font-family: "Jost", sans-serif;
 }
 
+.footerLinks {
+  position: relative;
+}
+
+.footerLinks::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #2966ba;
+  transition: 150ms;
+}
+
+.footerLinks:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 70%;
+  background-color: #2966ba;
+  transition: 150ms;
+}
+
 .highlighted a {
   position: relative;
 }

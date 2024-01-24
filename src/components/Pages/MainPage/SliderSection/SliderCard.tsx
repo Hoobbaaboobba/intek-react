@@ -32,14 +32,16 @@ const SliderCard = ({
           </div>
         </a>
       </div>
-      <div className="bg-super-light-gray flex h-full w-full flex-col items-start justify-center gap-4 p-8 sm:p-12 md:gap-8 md:p-16">
+      <div className="flex h-full w-full flex-col items-start justify-center gap-4 bg-super-light-gray p-8 sm:p-12 md:gap-8 md:p-16">
         <h1 className="text-3xl font-semibold text-dark-gray md:text-5xl">
           {title}
         </h1>
         <p className="text-lg font-light text-dark-gray md:text-2xl">
           {description}
         </p>
-        <button className="under text-xl font-bold">Читать далее</button>
+        <button className="under text-xl font-bold text-dark-gray">
+          Читать далее
+        </button>
       </div>
     </div>
   );

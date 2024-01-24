@@ -7,7 +7,7 @@ const YandexMap = () => {
         <YMaps>
           <Map
             defaultState={{
-              center: [55.75, 37.57],
+              center: [55.920119, 37.673079],
               zoom: 9,
               controls: ["zoomControl", "fullscreenControl"],
             }}
@@ -15,7 +15,7 @@ const YandexMap = () => {
             width={700}
             height={400}
           >
-            <Placemark defaultGeometry={[55.75, 37.57]} />
+            <Placemark defaultGeometry={[55.920119, 37.673079]} />
           </Map>
         </YMaps>
       </div>
@@ -23,7 +23,7 @@ const YandexMap = () => {
         <YMaps>
           <Map
             defaultState={{
-              center: [55.75, 37.57],
+              center: [55.920119, 37.673079],
               zoom: 9,
               controls: ["zoomControl", "fullscreenControl"],
             }}
@@ -31,7 +31,7 @@ const YandexMap = () => {
             width={350}
             height={250}
           >
-            <Placemark defaultGeometry={[55.75, 37.57]} />
+            <Placemark defaultGeometry={[55.920119, 37.673079]} />
           </Map>
         </YMaps>
       </div>

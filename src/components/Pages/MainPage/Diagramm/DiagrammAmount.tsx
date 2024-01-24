@@ -64,7 +64,7 @@ export const DiagrammAmount = () => {
           <CardTitle className="text-4xl text-dark-gray">
             Реализация продукции, штук
           </CardTitle>
-          <CardDescription className="text-md gap-2 text-dark-gray">
+          <CardDescription className="text-md gap-2 font-light text-dark-gray">
             <span>В 2021 году реализовано более</span>{" "}
             <span className="text-green-500">11 млн. шт. изделий</span>
           </CardDescription>

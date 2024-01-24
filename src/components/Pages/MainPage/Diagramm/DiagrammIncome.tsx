@@ -64,7 +64,7 @@ export const DiagrammIncome = () => {
           <CardTitle className="text-4xl text-dark-gray">
             Выручка, руб
           </CardTitle>
-          <CardDescription className="text-md text-dark-gray">
+          <CardDescription className="text-md font-light text-dark-gray">
             <span>Рост выручки в 2021 году к 2019 году более</span>{" "}
             <span className="text-green-500">19,8%</span>
           </CardDescription>
@@ -107,7 +107,7 @@ export const DiagrammIncome = () => {
                               </div> */}
                               <div className="flex flex-col">
                                 <span className="text-[0.70rem] uppercase text-muted-foreground">
-                                  Реализовано
+                                  Выручка
                                 </span>
                                 <span className="font-bold">
                                   {payload[1].value} млн
