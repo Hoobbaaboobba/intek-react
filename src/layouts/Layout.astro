@@ -2,11 +2,14 @@
 export interface Props {
 	title: string;
 	description: string;
+	ogDescription: string;
+	ogTitle: string;
+	twitterDescription: string
+	keywords: string
 }
 
-const {title, description} = Astro.props;
+const {title, description, ogDescription, ogTitle, twitterDescription, keywords} = Astro.props;
 
-import BaseHead from '@/components/Head/BaseHead.astro';
 import Header from '@/components/Global/Header/Header'
 import '@/styles/globals.css'
 import { ViewTransitions } from 'astro:transitions';
@@ -15,13 +18,39 @@ import NewsSection from '@/components/Global/News/NewsSection.astro'
 import SubscribeSection from '@/components/Global/Subscribe/SubscribeSection.astro'
 import Footer from '@/components/Global/Footer/Footer.astro'
 
-const canonicalURL = Astro.url.pathname
+const canonicalURL = Astro.url.href
 ---
 
 <!doctype html>
 <html lang="ru">
 	<head>
-		<BaseHead title={title} description={description}/>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{title}</title>
+
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link rel="sitemap" href="/sitemap-index.xml"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<meta name="description" content={description}>
+		<meta name="keywords" content={keywords}>
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="ИНТЕК">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content={ogTitle}>
+		<meta property="og:description" content={ogDescription}>
+		<meta property="og:url" content={canonicalURL}>
+		<meta property="og:image" content="https://www.intek-tools.ru/link-to-your-catalog-image.jpg">
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content={ogTitle}>
+		<meta name="twitter:description" content={twitterDescription}>
+		<meta name="twitter:image" content="https://www.intek-tools.ru/link-to-your-twitter-image.jpg">
+		<link rel="canonical" href={canonicalURL}>
 		<ViewTransitions/>
 	</head>
 	<body class="w-full flex flex-col justify-center items-center bg-white">

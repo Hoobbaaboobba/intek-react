@@ -3,40 +3,35 @@ import GoogleAnalytics from './GoogleAnalytics.astro';
 export interface Props {
     title: string;
     description: string;
+    canonical: string
 }
-const { title, description} = Astro.props;
+const { title, description, canonical} = Astro.props;
     
 let permalink = 'https://howtocode.io';
 ---
     
 <GoogleAnalytics />
-    
-    <!-- High Priority Global Metadata -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<title>{title}</title>
 
-    <!-- Low Priority Global Metadata -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Строительные инструменты от ИНТЕК - Шпатели, Гладилки, Терки и др.</title>
+
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 <link rel="sitemap" href="/sitemap-index.xml"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Primary Meta Tags -->
-<meta name="title" content={title} />
-<meta name="description" content={description} />
-    
-    <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={permalink} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:image" content="/images/social.jpg" />
-    
-    <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={permalink} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="/images/social.jpg" />
+<meta name="description" content="ИНТЕК предлагает профессиональные строительные инструменты для вашего проекта: шпатели, гладилки, сеткодержатели, терки, кисти, щетки, кельмы и многое другое. Обеспечьте высокое качество работы с нашими инструментами.">
+<meta name="keywords" content="шпатели, гладилки, сеткодержатели, терки, кисти, щетки, кельмы, строительные инструменты, ИНТЕК, каталог инструментов, купить инструменты">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ИНТЕК">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Строительные инструменты от ИНТЕК">
+<meta property="og:description" content="Широкий ассортимент профессиональных строительных инструментов: шпатели, гладилки, сеткодержатели, терки и многое другое. Найдите идеальные инструменты для вашего проекта в ИНТЕК.">
+<meta property="og:url" content={canonical}>
+<meta property="og:image" content="https://www.intek-tools.ru/link-to-your-catalog-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Строительные инструменты от ИНТЕК">
+<meta name="twitter:description" content="Ваш источник профессиональных строительных инструментов: шпатели, гладилки, терки, и многое другое. Откройте для себя качество ИНТЕК.">
+<meta name="twitter:image" content="https://www.intek-tools.ru/link-to-your-twitter-image.jpg">
+<link rel="canonical" href={canonical}>

@@ -1,0 +1,16 @@
+---
+import { Selector } from '@/components/Pages/CatalogPage/Selector.tsx'
+import {SwitchModal} from '@/components/Pages/CatalogPage/Switch'
+import { PlusCircle } from 'lucide-react'
+
+---
+
+<div class="flex flex-col px-4 max-w-[1300px] gap-y-4 justify-start mb-8 items-start w-full">
+    <div class="w-full bg-main-blue h-3">
+    </div>
+    <!-- <PlusCircle/> -->
+    <div class="flex flex-col sm:flex-row w-full gap-4">
+        <Selector client:load/>
+        <SwitchModal client:load/>
+    </div> 
+</div>
