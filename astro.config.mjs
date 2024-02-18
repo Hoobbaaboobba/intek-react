@@ -15,6 +15,4 @@ export default defineConfig({
     react(),
     sitemap(),
   ],
-  output: "hybrid",
-  adapter: vercel(),
 });
