@@ -1,13 +1,17 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import SameProducts from '@/components/Pages/CatalogPage/SameProducts.astro'
+
 import pagesData from '../../pagesData.json'
+
 import { Image } from "astro:assets";
 
 import Image1 from '@/assets/shpatel-proff-150.png'
-
 import {ImageDialog} from '@/components/Pages/CatalogPage/ImageDialog'
+import {ProductContent} from '@/components/Pages/CatalogPage/ProductContent'
+import {QueryButtons} from '@/components/Pages/CatalogPage/QueryButtons'
+import { Separator } from "@/components/ui/separator";
 
-import {ProductSelector} from '@/components/Pages/CatalogPage/ProductSelector'
 
 export async function getStaticPaths() {
     const pages = pagesData
@@ -42,41 +46,41 @@ const selectorData = pagesData.filter(e => e.id === id)
   twitterDescription={description}
   keywords={`${title}, строительные инструменты, шпатели, гладилки, кисти, профессиональные инструменты, каталог инструментов`}
 >
-  <div class="pt-40 w-full flex flex-col justify-center items-center pb-16">
+  <div class="pt-24 lg:pt-40 w-full flex flex-col justify-center items-center pb-16 px-4">
     <div class="max-w-[1300px] w-full flex flex-col justify-strat items-start gap-4">
-      <div class="w-full space-x-4">
-        <a href="?q=review" class={`${(query === 'review' || query === null) && 'under'} text-lg py-1`}>Обзор</a>
-        <a href="?q=details" class={`${query === 'details' && 'under'} text-lg py-1`}>Характеристики</a>
+      <div class="w-full flex gap-6 justify-center items-center md:justify-start sticky md:static top-[80px] bg-white left-0 py-3">
+        <QueryButtons client:load/>
       </div>
-      <div class="flex w-full justify-between items-start gap-8 h-full">
-        {(query === 'review' || query === null) ? (
-          <div class="text-dark-gray flex flex-col gap-8 justify-between items-start">
-            <div class="h-full space-y-2">
-              <h1 class="text-3xl font-medium">{title}</h1>
-              <p class="text-sm">{description}</p>
-            </div>
-            <ProductSelector data={selectorData} client:load/>
-          </div>
-        ) : (
-          <ul>
-            <li>Нетто {parseFloat(netto).toFixed(2)}</li>
-            <li>Брутто {parseFloat(brutto).toFixed(2)}</li>
-            <li>Ширина {parseFloat(width).toFixed(2)}</li>
-            <li>Высота {parseFloat(height).toFixed(2)}</li>
-            <li>Длина{parseFloat(length).toFixed(2)}</li>
-            <li>CBM {parseFloat(cbm)}</li>
-            <li>{parseFloat(fiveToOne).toFixed(2)}</li>
-            <li>{parseFloat(threeToFive).toFixed(2)}</li>
-            <li>{parseFloat(oneToThree).toFixed(2)}</li>
-            <li>{parseFloat(eightToOne).toFixed(2)}</li>
-          </ul>
-        )}
+      <Separator className="my-4"/>
+      <div class="flex flex-col-reverse md:flex-row w-full justify-center md:justify-between items-center md:items-start gap-8 h-full mt-4">
+        <ProductContent
+          selectorData={selectorData}
+          image={image}
+          code={code}
+          id={id}
+          title={title}
+          amount={amount}
+          brutto={brutto}
+          netto={netto}
+          width={width}
+          height={height}
+          length={length}
+          cbm={cbm}
+          fiveToOne={fiveToOne}
+          threeToFive={threeToFive}
+          oneToThree={oneToThree}
+          eightToOne={eightToOne}
+          description={description} 
+          barcode={barcode}
+          client:load
+        />
         <ImageDialog title={title} image={Image1.src} client:load>
-          <div class="w-[400px] h-[300px] aspect-3/4 border rounded-md hover:shadow-md transition cursor-zoom-in flex justify-center items-center">
-            <Image src={Image1} alt={`image`} width={400} height={300}/>
+          <div class="aspect-3/4 border rounded-md hover:shadow-md transition cursor-zoom-in flex justify-center items-center">
+            <Image src={Image1} alt={`image`} />
           </div>
         </ImageDialog>
       </div>
     </div>
   </div>
+  <SameProducts/>
 </Layout>

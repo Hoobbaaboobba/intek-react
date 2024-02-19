@@ -5,6 +5,20 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+.dash {
+  display: flex;
+  flex: 1;
+}
+
+.dash::before {
+  content: "";
+  display: flex;
+  height: 15px;
+  border-bottom: 1px dashed rgb(199, 199, 199);
+  order: 1;
+  flex: 1;
+  margin: 0 4px;
+}
 
 .footerLinks {
   position: relative;

@@ -47,12 +47,6 @@ export const ProductSelector = ({ data }: { data: Product[] }) => {
                   setOpen(false);
                 }}
               >
-                <Check
-                  className={cn(
-                    "mr-2 h-4 w-4",
-                    item.title === value ? "opacity-100" : "opacity-0",
-                  )}
-                />
                 <a href={`/${item.slug}`} className="h-full w-full">
                   {item.title}
                 </a>

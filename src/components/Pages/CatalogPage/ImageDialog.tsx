@@ -12,7 +12,7 @@ export const ImageDialog = ({
   return (
     <Dialog>
       <DialogTrigger className="aspect-3/4">{children}</DialogTrigger>
-      <DialogContent className="aspect-3/4 flex items-center justify-center">
+      <DialogContent className="aspect-3/4 flex min-h-[200px] min-w-[300px] items-center justify-center">
         <img src={image} alt={title} className="h-full w-full" />
       </DialogContent>
     </Dialog>
