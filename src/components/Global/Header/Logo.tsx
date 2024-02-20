@@ -2,8 +2,8 @@ import LogoImg from "../../../assets/blue-logo.webp";
 import LogoWhite from "../../../assets/white-logo.png";
 
 interface LogoProps {
-  more40: boolean;
-  isFit: boolean;
+  more40?: boolean;
+  isFit?: boolean;
 }
 
 const Logo = ({ more40, isFit }: LogoProps) => {
