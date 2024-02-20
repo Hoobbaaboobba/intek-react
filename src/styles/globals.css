@@ -10,6 +10,13 @@
   flex: 1;
 }
 
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+
 .dash::before {
   content: "";
   display: flex;

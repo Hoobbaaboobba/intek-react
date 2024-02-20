@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import MenuButtons from "./MenuButtons";
+import MenuButtons, { buttons } from "./MenuButtons";
 import Contacts from "./Contacts";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
@@ -12,9 +12,13 @@ interface Props {
 const Header = ({ url }: Props) => {
   const [navbar, setNavbar] = useState(false);
 
+  const isFit = buttons
+    .map((e) => e.href.split("/")[1])
+    .includes(url.split("/")[3]);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 350) {
         setNavbar(true);
       } else {
         setNavbar(false);
@@ -24,16 +28,18 @@ const Header = ({ url }: Props) => {
   return (
     <header
       className={`${
-        navbar ? "lg:translate-y-[-50px]" : "lg:translate-y-0"
+        navbar ? "bg-white/80 lg:translate-y-[-50px]" : "lg:translate-y-0"
       } } fixed left-0 top-0 z-30 flex w-full items-center 
-      justify-center bg-white/80 shadow-md backdrop-blur-lg transition`}
+      justify-center bg-transparent shadow-md backdrop-blur-lg transition`}
     >
       <div className="w-full px-8 py-4 lg:px-12">
-        <Contacts />
-        <Separator className="hidden bg-white lg:block" />
+        <Contacts isFit={isFit} />
+        <Separator
+          className={`hidden ${isFit ? "bg-white/20" : "text-slate-700"} lg:block`}
+        />
         <div className="flex w-full items-center justify-between lg:pt-4">
-          <Logo />
-          <MenuButtons url={url} />
+          <Logo more40={navbar} isFit={isFit} />
+          <MenuButtons more40={navbar} isFit={isFit} url={url} />
           <div className="block lg:hidden">
             <MobileMenu />
           </div>

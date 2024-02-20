@@ -10,31 +10,41 @@ export const buttons = [
     href: "/katalog-tovarov",
   },
   {
-    title: "Контакты",
-    href: "/kontakt",
+    title: "Доставка",
+    href: "/dostavka-i-oplata",
   },
   {
-    title: "Доставка",
+    title: "Партнеры",
     href: "/dostavka-i-oplata",
   },
   {
     title: "О компании",
     href: "/o-kompanii",
   },
+  {
+    title: "Новости",
+    href: "/o-kompanii",
+  },
+  {
+    title: "Контакты",
+    href: "/kontakt",
+  },
 ];
 
 interface Props {
   url: any;
+  more40: boolean;
+  isFit: boolean;
 }
 
-const MenuButtons = ({ url }: Props) => {
+const MenuButtons = ({ url, more40, isFit }: Props) => {
   const splittedUrl = url.split("/")[3];
   return (
     <div className="hidden lg:block">
       {buttons.map((button, index) => (
         <Button
           key={index}
-          className={`highlighted "text-dark-gray" ${
+          className={`highlighted ${isFit ? (more40 ? "text-dark" : "text-white") : "text-dark"} text-md ${
             splittedUrl === button.href.split("/")[1]
               ? "selected bg-main-blue text-white"
               : ""
