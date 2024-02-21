@@ -14,7 +14,11 @@
   max-width: 1300px;
   width: 100%;
   padding-left: 2rem;
-  padding-right: 2rem
+  padding-right: 2rem;
+}
+
+.bg_position {
+  background-position: 50% 20%;
 }
 
 .dash::before {

@@ -18,7 +18,7 @@ const Header = ({ url }: Props) => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 350) {
+      if (window.scrollY > 40) {
         setNavbar(true);
       } else {
         setNavbar(false);

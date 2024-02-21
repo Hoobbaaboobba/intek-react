@@ -15,7 +15,7 @@ export const buttons = [
   },
   {
     title: "Партнеры",
-    href: "/dostavka-i-oplata",
+    href: "/partners",
   },
   {
     title: "О компании",
@@ -23,7 +23,7 @@ export const buttons = [
   },
   {
     title: "Новости",
-    href: "/o-kompanii",
+    href: "/news",
   },
   {
     title: "Контакты",
