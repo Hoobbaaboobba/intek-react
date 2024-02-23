@@ -1,5 +1,5 @@
 import { data } from "productsData";
-import { Suspense, useEffect, useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { ContentCard } from "./ContentCard";
 import { Loader2 } from "lucide-react";
 

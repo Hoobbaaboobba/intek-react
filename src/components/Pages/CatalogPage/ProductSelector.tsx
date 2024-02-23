@@ -11,9 +11,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useEffect, useState } from "react";
+
+import { ChevronsUpDown } from "lucide-react";
+import { useState } from "react";
 import type { Product } from "types";
 
 export const ProductSelector = ({ data }: { data: Product[] }) => {
