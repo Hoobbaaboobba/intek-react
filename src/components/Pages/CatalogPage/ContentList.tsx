@@ -25,13 +25,13 @@ export const ContentList = () => {
   }, []);
 
   return (
-    <div className="flex w-full items-center justify-center py-8">
+    <div className="flex w-full items-center justify-center px-8 py-8">
       {isPending ? (
         <div className="flex w-full items-center justify-center">
           <Loader2 className="animate-spin text-main-blue transition" />
         </div>
       ) : (
-        <div className="grid w-full max-w-[1300px] grid-cols-1 gap-8 px-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full max-w-[1300px] grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {items?.map((item) =>
             query ? (
               item.title.includes(query) && (
