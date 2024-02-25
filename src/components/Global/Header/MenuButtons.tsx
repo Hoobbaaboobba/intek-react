@@ -40,7 +40,7 @@ interface Props {
 const MenuButtons = ({ url, more40, isFit }: Props) => {
   const splittedUrl = url.split("/")[3];
   return (
-    <div className="hidden lg:block">
+    <div className="hidden xl:block">
       {buttons.map((button, index) => (
         <Button
           key={index}

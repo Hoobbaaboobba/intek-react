@@ -40,7 +40,7 @@ const Header = ({ url }: Props) => {
         <div className="flex w-full items-center justify-between lg:pt-4">
           <Logo more40={navbar} isFit={isFit} />
           <MenuButtons more40={navbar} isFit={isFit} url={url} />
-          <div className="block lg:hidden">
+          <div className="block xl:hidden">
             <MobileMenu />
           </div>
         </div>

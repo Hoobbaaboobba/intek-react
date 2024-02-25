@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { Clock12 } from "lucide-react";
 
 ---
 
@@ -18,5 +19,8 @@ import Layout from "@/layouts/Layout.astro";
             <h1 class="text-3xl sm:text-5xl font-semibold z-10">Новости</h1>
             <p class="text-lg sm:text-xl z-10">Будьте в курсе новостей, блогов и обновлений ИНТЕК в вашем регионе и по всему миру.</p>
         </div>
+    </div>
+    <div class="w-full bg-main-blue h-[100px] text-white flex justify-center items-center">
+        <h2 class="font-semibold text-3xl flex justify-center items-center gap-2">Тут будут появляться новости <Clock12 className="animate-spin" strokeWidth={3}/></h2>
     </div>
 </Layout>
