@@ -60,7 +60,10 @@ export const Selector = () => {
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent align="start" className="p-0 sm:w-[400px] md:w-[700px]">
+      <PopoverContent
+        align="start"
+        className="max-h-[300px] overflow-y-auto p-0 sm:w-[400px] md:w-[700px]"
+      >
         <Command>
           <CommandInput placeholder="Найти товар..." />
           <CommandEmpty>Такого товара нет.</CommandEmpty>

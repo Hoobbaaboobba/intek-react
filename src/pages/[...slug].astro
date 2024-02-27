@@ -6,11 +6,11 @@ import pagesData from '../../pagesData.json'
 
 import { Image } from "astro:assets";
 
-import Image1 from '@/assets/shpatel-proff-150.png'
 import {ImageDialog} from '@/components/Pages/CatalogPage/ImageDialog'
 import {ProductContent} from '@/components/Pages/CatalogPage/ProductContent'
 import {QueryButtons} from '@/components/Pages/CatalogPage/QueryButtons'
 import { Separator } from "@/components/ui/separator";
+import type { ImageMetadata } from 'astro';
 
 
 export async function getStaticPaths() {
@@ -30,6 +30,11 @@ export async function getStaticPaths() {
 const {image, code, id, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode } = Astro.props
 
 export const prerender = true;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif,webp}')
+console.log(images)
+
+if (!images[image]) throw new Error(`"${image}" does not exist in glob: "/src/assets/*.{jpeg,jpg,png,gif,webp}"`);
 
 const selectorData = pagesData.filter(e => e.id === id)
 
@@ -71,9 +76,9 @@ const selectorData = pagesData.filter(e => e.id === id)
           barcode={barcode}
           client:load
         />
-        <ImageDialog title={title} image={Image1.src} client:load>
+        <ImageDialog title={title} image={image} client:load>
           <div class="aspect-3/4 border rounded-md hover:shadow-md transition cursor-zoom-in flex justify-center items-center">
-            <Image src={Image1} alt={`image`} />
+            <Image src={images[image]()} alt={`image`} width={450} height={400}/>
           </div>
         </ImageDialog>
       </div>

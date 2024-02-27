@@ -33,7 +33,10 @@ export const ProductSelector = ({ data }: { data: Product[] }) => {
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent align="start" className="p-0">
+      <PopoverContent
+        align="start"
+        className="max-h-[300px] overflow-y-auto p-0"
+      >
         <Command>
           <CommandInput placeholder="Найти товар..." />
           <CommandEmpty>Такого товара нет.</CommandEmpty>
