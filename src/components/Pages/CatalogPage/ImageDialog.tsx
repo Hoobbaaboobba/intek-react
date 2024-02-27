@@ -11,9 +11,11 @@ export const ImageDialog = ({
 }) => {
   return (
     <Dialog>
-      <DialogTrigger className="aspect-3/4">{children}</DialogTrigger>
-      <DialogContent className="aspect-3/4 flex min-h-[200px] min-w-[300px] items-center justify-center">
-        <img src={image} alt={title} className="h-full w-full" />
+      <DialogTrigger className="cursor-zoom-in rounded-md border transition hover:shadow-md ">
+        {children}
+      </DialogTrigger>
+      <DialogContent className="flex min-h-[200px] min-w-[300px] items-center justify-center">
+        {children}
       </DialogContent>
     </Dialog>
   );

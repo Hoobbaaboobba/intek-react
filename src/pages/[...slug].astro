@@ -76,7 +76,7 @@ const selectorData = pagesData.filter(e => e.id === id)
           client:load
         />
         <ImageDialog title={title} image={image} client:load>
-          <div class="aspect-3/4 border rounded-md hover:shadow-md transition cursor-zoom-in flex justify-center items-center">
+          <div class="flex justify-center items-center">
             <Image src={images[image]()} alt={`image`} width={450} height={400}/>
           </div>
         </ImageDialog>
