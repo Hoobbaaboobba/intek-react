@@ -3,40 +3,56 @@ import BlueSquare from "@/components/Global/BlueSquare.astro";
 import CatalogItems from "./CatalogItems.astro";
 import { Image } from "astro:assets";
 
-import shpatelImage from '../../../../assets/shpatel-proff-150.png'
+import shpatelProf from '../../../../assets/shpatel-proff-150.png'
+import shpatelpravilo from '../../../../assets/shpatel-pravilo-600.png'
+import shpatel40 from '../../../../assets/shpatel-proff-40.png'
+import gladilka from '../../../../assets/gladilka-130x270.png'
+import brus from '../../../../assets/brus-210x105.png'
+import terochnaya from '../../../../assets/terka-gubka-280x140.png'
+import terkappu from '../../../../assets/terka-ppu-120x240.png'
+import shetka from '../../../../assets/shetka-derevo-300.png'
+import kelma from '../../../../assets/kelma-polukrug-220.png'
 
 const items = [
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Шпатель-правило 600 мм",
+    image: shpatelpravilo,
+    href: 'shpatel-pravilo-600-mm-iz-nerzhaveyuschey-stali-s-alyuminievoy-ruchkoy'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Шпатель proff 40 мм",
+    image: shpatel40,
+    href: 'shpatel-40-mm-nerzhaveyuschaya-stal-plastmassovaya-ruchka'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Гладилка нержавеющая 130 мм х 270 мм",
+    image: gladilka,
+    href: 'gladilka-nerzhaveyuschaya-130-mm-h-270-mm-plastikovaya-ruchka'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Брус для шлифования 210х105",
+    image: brus,
+    href: 'brus-dlya-shlifovaniya-210h105'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Терочная доска 280х140",
+    image: terochnaya,
+    href: 'terochnaya-doska-280h140-s-myagkoy-gubchatoy-nakladkoy-20mm'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Тёрка ППУ 120х240 мм",
+    image: terkappu,
+    href: 'terka-ppu-120h240-mm'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Щетка для подметания (улица) 300 мм",
+    image: shetka,
+    href: 'schetka-dlya-podmetaniya-ulitsa-300-mm'
   },
   {
-    title: "Шпатель фасадный Proff 150 мм",
-    image: shpatelImage
+    title: "Кельма полукруглая 220 мм",
+    image: kelma,
+    href: 'kelma-polukruglaya-220-mm'
   },
 ];
 ---
@@ -48,17 +64,17 @@ const items = [
           <h2 class="text-xl text-primary/50 mb-2 font-light">
             Самые актуальные инструменты по выгодным ценам.
           </h2>
-          <a href="" class="under text-2xl font-semibold text-dark-gray">
+          <a href="/katalog-tovarov" class="under text-2xl font-semibold text-dark-gray">
             Больше товаров
           </a>
         </div>
         <div class="gap grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:gap-8">
           <a
-            href="/"
+            href="/shpatel-fasadnyy-profi-150-mm-iz-nerzhaveyuschey-stali-s-dvuhkomponentnoy-ruchkoy"
             class="group relative h-full w-full overflow-hidden border border-border"
           >
             <Image
-              src={shpatelImage}
+              src={shpatelProf}
               alt="Шпатель фасадный Proff 150 мм"
               width='700'
               height='500'
@@ -66,19 +82,19 @@ const items = [
               class='w-full h-full sm:w-[700px] sm:h-[500px]'
             />
             <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border bg-white text-center text-dark-gray transition sm:text-xl xl:-translate-x-[85%] xl:group-hover:translate-x-0">
-              <div class="w-full p-2">Шпатель фасадный Proff 150 мм</div>
+              <div class="w-full p-2">Шпатель фасадный ПРОФИ 150 мм</div>
               <BlueSquare />
             </div>
           </a>
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:gap-8">
             {items.slice(0, 4).map((item) => (
-              <CatalogItems image={item.image} title={item.title} />
+              <CatalogItems image={item.image} title={item.title} href={item.href}/>
             ))}
           </div>
         </div>
         <div class="w-full hidden sm:grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {items.slice(4, 8).map((item) => (
-            <CatalogItems image={item.image} title={item.title} />
+            <CatalogItems image={item.image} title={item.title} href={item.href}/>
           ))}
         </div>
       </div>

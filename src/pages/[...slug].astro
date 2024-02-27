@@ -32,7 +32,6 @@ const {image, code, id, title, amount, brutto, netto, width, height, length, cbm
 export const prerender = true;
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif,webp}')
-console.log(images)
 
 if (!images[image]) throw new Error(`"${image}" does not exist in glob: "/src/assets/*.{jpeg,jpg,png,gif,webp}"`);
 
