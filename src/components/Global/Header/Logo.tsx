@@ -11,12 +11,12 @@ const Logo = ({ more40, isFit }: LogoProps) => {
     <a href="/">
       {isFit ? (
         more40 ? (
-          <img src={LogoImg.src} alt="Синий логотип ИНТЕК" />
+          <img src={LogoImg.src} alt="Синий логотип ИНТЕК" width={180} />
         ) : (
-          <img src={LogoWhite.src} alt="Белый логотип ИНТЕК" />
+          <img src={LogoWhite.src} alt="Белый логотип ИНТЕК" width={180} />
         )
       ) : (
-        <img src={LogoImg.src} alt="Синий логотип ИНТЕК" />
+        <img src={LogoImg.src} alt="Синий логотип ИНТЕК" width={180} />
       )}
     </a>
   );
