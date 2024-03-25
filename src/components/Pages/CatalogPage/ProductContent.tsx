@@ -60,7 +60,7 @@ export const ProductContent = ({
             <h1 className="text-2xl font-semibold sm:text-3xl">{title}</h1>
             <p className="text-sm">{description}</p>
           </div>
-          <ProductSelector data={selectorData} />
+          <ProductSelector data={selectorData} current={title} />
         </div>
       )}
       {query === "details" && (

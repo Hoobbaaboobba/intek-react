@@ -11,12 +11,19 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
 
-import { ChevronsUpDown } from "lucide-react";
+import { Check, CheckIcon, ChevronsUpDown } from "lucide-react";
 import { useState } from "react";
 import type { Product } from "types";
 
-export const ProductSelector = ({ data }: { data: Product[] }) => {
+export const ProductSelector = ({
+  data,
+  current,
+}: {
+  data: Product[];
+  current?: string;
+}) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
 
@@ -50,6 +57,14 @@ export const ProductSelector = ({ data }: { data: Product[] }) => {
                   setOpen(false);
                 }}
               >
+                {current === item.title && (
+                  <Check
+                    className={cn(
+                      "mr-2 h-4 w-4",
+                      current === item.title ? "opacity-100" : "opacity-0",
+                    )}
+                  />
+                )}
                 <a href={`/${item.slug}`} className="h-full w-full">
                   {item.title}
                 </a>
