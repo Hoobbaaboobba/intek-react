@@ -28,9 +28,9 @@ const SliderCard = ({
         </a>
       </div>
       <div className="flex h-full w-full flex-col items-start justify-center gap-4 bg-super-light-gray p-8 sm:p-12 md:gap-8 md:p-16">
-        <h1 className="text-3xl font-semibold text-dark-gray md:text-5xl">
+        <h2 className="text-3xl font-semibold text-dark-gray md:text-5xl">
           {title}
-        </h1>
+        </h2>
         <p className="text-lg font-light text-dark-gray md:text-2xl">
           {description}
         </p>
