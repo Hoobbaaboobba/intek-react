@@ -33,6 +33,7 @@
 
 .footerLinks {
   position: relative;
+  margin-left: 14px;
 }
 
 .newsPhotoOne {
@@ -47,25 +48,32 @@
   background-image: url("../assets/newsPhotoThree.webp");
 }
 
+.footerLinks::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #1f79f8;
+}
+
 .footerLinks::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 2px;
+  bottom: -5px;
+  right: 0px;
+  height: 1px;
   width: 0%;
-  background-color: #2966ba;
+  background-color: #1f79f8;
   transition: 150ms;
 }
 
 .footerLinks:hover::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 2px;
   width: 70%;
-  background-color: #2966ba;
+  background-color: #1f79f8;
   transition: 150ms;
 }
 

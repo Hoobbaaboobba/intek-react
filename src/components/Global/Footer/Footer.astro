@@ -10,51 +10,79 @@ const mainButtons = [
         href: '/',
     },
     {
-        label: 'Доставка и оплата',
-        href: '/',
+        label: 'Каталог',
+        href: '/katalog-tovarov',
     },
     {
-        label: 'О компании',
-        href: '/',
+        label: 'Доставка и оплата',
+        href: '/dostavka-i-oplata',
     },
     {
         label: 'Партнёры',
-        href: '/',
+        href: '/partnery',
     },
     {
-        label: 'СОУТ',
-        href: '/',
+        label: 'О компании',
+        href: '/o-kompanii',
+    },
+    {
+        label: 'Новости',
+        href: '/novosty',
     },
     {
         label: 'Контакты',
-        href: '/',
+        href: '/kontakt',
+    },
+    {
+        label: 'СОУТ',
+        href: '/sout',
     },
 ]
 
 const catalogButtons = [
     {
         label: 'Шпателя',
-        href: '/',
+        href: '/katalog-tovarov?label=Шпатель',
     },
     {
         label: 'Гладилки',
-        href: '/',
+        href: '/katalog-tovarov?label=Гладилки',
     },
     {
-        label: 'Терки',
-        href: '/',
+        label: 'Сеткодержатель',
+        href: '/katalog-tovarov?label=Сеткодержатель',
     },
     {
-        label: 'Брусы и сеткодержатели',
-        href: '/',
+        label: 'Брус для шлифования',
+        href: '/katalog-tovarov?label=Брус для шлифования',
     },
     {
-        label: 'Кельмы и мастерки',
-        href: '/',
+        label: 'Терочная доска',
+        href: '/katalog-tovarov?label=Терочная доска',
     },
     {
-        label: 'Щеточные изделия',
-        href: '/',
+        label: 'Терка',
+        href: '/katalog-tovarov?label=Терка',
+    },
+    {
+        label: 'Полутерок',
+        href: '/katalog-tovarov?label=Полутерок',
+    },
+    {
+        label: 'Кисть',
+        href: '/katalog-tovarov?label=Кисть',
+    },
+    {
+        label: 'Щетка',
+        href: '/katalog-tovarov?label=Щетка',
+    },
+    {
+        label: 'Кельма',
+        href: '/katalog-tovarov?label=Кельма',
+    },
+    {
+        label: 'Набор',
+        href: '/katalog-tovarov?label=Набор',
     },
 ]
 
@@ -74,30 +102,30 @@ const otherButtons = [
     <div class="w-full flex-col max-w-[1300px] flex justify-center items-center">
         <div class="w-full flex flex-col md:flex-row justify-center items-center text-center md:text-start md:items-start md:justify-between">
             <div class="flex flex-col w-ful">
-                <Image src={whiteLogo} format="avif" alt='Белый логотип ИНТЕК' width={220} height={69} />
-                <ul class="flex flex-col gap-4 mt-4">
+                <Image src={whiteLogo} format="avif" alt='Белый логотип ИНТЕК' width={160} height={69} />
+                <ul class="flex flex-col gap-2 mt-4">
                     {mainButtons.map((button) => (
-                        <li class="text-white text-lg">
+                        <li class="text-white text-sm">
                             <a href={button.href} class="footerLinks font-light">{button.label}</a>
                         </li>
                     ))}
                 </ul>
             </div>
             <div class="flex flex-col w-ful py-4">
-                <h2 class="text-white text-4xl font-semibold">Каталог товаров</h2>
-                <ul class="flex flex-col gap-4 mt-6">
+                <h2 class="text-white text-xl font-semibold">Каталог товаров</h2>
+                <ul class="flex flex-col gap-2 mt-6">
                     {catalogButtons.map((button) => (
-                        <li class="text-white text-lg">
+                        <li class="text-white text-sm">
                             <a href={button.href} class="footerLinks font-light">{button.label}</a>
                         </li>
                     ))}
                 </ul>
             </div>
             <div class="flex flex-col w-ful py-4">
-                <h2 class="text-white text-4xl font-semibold">Прочее</h2>
-                <ul class="flex flex-col gap-4 mt-6">
+                <h2 class="text-white text-xl font-semibold">Прочее</h2>
+                <ul class="flex flex-col gap-2 mt-6">
                     {otherButtons.map((button) => (
-                        <li class="text-white text-lg">
+                        <li class="text-white text-sm">
                             <a href={button.href} class="footerLinks font-light">{button.label}</a>
                         </li>
                     ))}
