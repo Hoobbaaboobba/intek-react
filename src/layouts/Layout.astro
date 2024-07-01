@@ -44,19 +44,19 @@ const canonicalURL = Astro.url.href
 		<meta property="og:title" content={ogTitle}>
 		<meta property="og:description" content={ogDescription}>
 		<meta property="og:url" content={canonicalURL}>
-		<meta property="og:image" content="https://www.intek-tools.ru/link-to-your-catalog-image.jpg">
+		<meta property="og:image" content="https://intek-react.vercel.app/_astro/blue-logo.aDWXgpiM.webp">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content={ogTitle}>
 		<meta name="twitter:description" content={twitterDescription}>
-		<meta name="twitter:image" content="https://www.intek-tools.ru/link-to-your-twitter-image.jpg">
+		<meta name="twitter:image" content="https://intek-react.vercel.app/_astro/blue-logo.aDWXgpiM.webp">
 		<link rel="canonical" href={canonicalURL}>
 		<ViewTransitions/>
 	</head>
 	<body class="w-full flex flex-col justify-center items-center bg-white">
 		<Header url={canonicalURL} client:load/>
 		<slot />
-		<NewsSection/>
+		<!-- <NewsSection/> -->
 		<ReviewsSection client:load/>
 		<SubscribeSection/>
 		<Footer/>
