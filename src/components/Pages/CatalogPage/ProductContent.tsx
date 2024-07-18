@@ -24,13 +24,9 @@ interface ProductContentProps {
 }
 
 export const ProductContent = ({
-  image,
-  code,
-  id,
   title,
   amount,
   brutto,
-  netto,
   width,
   height,
   length,
@@ -40,7 +36,6 @@ export const ProductContent = ({
   oneToThree,
   eightToOne,
   description,
-  barcode,
   selectorData,
 }: ProductContentProps) => {
   const [query, setQuery] = useState<string | null>();
@@ -54,61 +49,59 @@ export const ProductContent = ({
   }, []);
   return (
     <div className="w-full">
-      {(query === "review" || query === null) && (
-        <div className="flex flex-col items-start justify-between gap-8 text-dark-gray">
-          <div className="h-full space-y-2">
-            <h1 className="text-2xl font-semibold sm:text-3xl">{title}</h1>
-            <p className="text-sm">{description}</p>
-          </div>
-          <ProductSelector data={selectorData} current={title} />
+      <div
+        className={`${query === "review" || query === null ? "flex" : "hidden"} flex-col items-start justify-between gap-8 text-dark-gray`}
+      >
+        <div className="h-full space-y-2">
+          <h1 className="text-2xl font-semibold sm:text-3xl">{title}</h1>
+          <p className="text-sm">{description}</p>
         </div>
-      )}
-      {query === "details" && (
-        <ul className="flex h-full w-full flex-col gap-2">
-          <li className="flex">
-            <span className="dash">Шт./Уп.</span>
-            <span className="order-2">{amount}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">Брутто</span>
-            <span className="order-2">{parseFloat(brutto).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">Ширина</span>
-            <span className="order-2">{parseFloat(width).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">Высота</span>
-            <span className="order-2">{parseFloat(height).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">Длина</span>
-            <span className="order-2">{parseFloat(length).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">CBM, m3</span>
-            <span className="order-2">{parseFloat(cbm)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">500-1 мл.р.</span>
-            <span className="order-2">{parseFloat(fiveToOne).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">300-500 т.р.</span>
-            <span className="order-2">
-              {parseFloat(threeToFive).toFixed(2)}
-            </span>
-          </li>
-          <li className="flex">
-            <span className="dash">150-300 т.р.</span>
-            <span className="order-2">{parseFloat(oneToThree).toFixed(2)}</span>
-          </li>
-          <li className="flex">
-            <span className="dash">80-150 т.р. САМОВЫВОЗ</span>
-            <span className="order-2">{parseFloat(eightToOne).toFixed(2)}</span>
-          </li>
-        </ul>
-      )}
+        <ProductSelector data={selectorData} current={title} />
+      </div>
+      <ul
+        className={`${query === "details" ? "flex" : "hidden"} h-full w-full flex-col gap-2`}
+      >
+        <li className="flex">
+          <span className="dash">Шт./Уп.</span>
+          <span className="order-2">{amount}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">Брутто</span>
+          <span className="order-2">{parseFloat(brutto).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">Ширина</span>
+          <span className="order-2">{parseFloat(width).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">Высота</span>
+          <span className="order-2">{parseFloat(height).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">Длина</span>
+          <span className="order-2">{parseFloat(length).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">CBM, m3</span>
+          <span className="order-2">{parseFloat(cbm)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">500-1 мл.р.</span>
+          <span className="order-2">{parseFloat(fiveToOne).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">300-500 т.р.</span>
+          <span className="order-2">{parseFloat(threeToFive).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">150-300 т.р.</span>
+          <span className="order-2">{parseFloat(oneToThree).toFixed(2)}</span>
+        </li>
+        <li className="flex">
+          <span className="dash">80-150 т.р. САМОВЫВОЗ</span>
+          <span className="order-2">{parseFloat(eightToOne).toFixed(2)}</span>
+        </li>
+      </ul>
     </div>
   );
 };

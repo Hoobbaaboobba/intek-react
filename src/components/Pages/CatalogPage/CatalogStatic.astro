@@ -1,0 +1,52 @@
+<div class="pt-24 lg:pt-40 w-full flex flex-col justify-center items-center pb-16 px-8">
+    <div class="max-w-[1300px] w-full flex flex-col justify-strat items-start gap-4">
+      <div class="w-full flex gap-3 justify-center items-center md:justify-start sticky md:static top-[80px] bg-white left-0 py-3">
+        <a href="#tab1" class="tab">Tab 1</a>
+        <a href="#tab2" class="tab">Tab 2</a>
+        <a href="#tab3" class="tab">Tab 3</a>
+      </div>
+      <!-- <Separator className="my-4"/> -->
+      <div class="flex flex-col-reverse md:flex-row w-full justify-center md:justify-between items-center md:items-start gap-8 h-full mt-4">
+        <div id="tab1" class="tab-pane">Content for Tab 1</div>
+        <div id="tab2" class="tab-pane">Content for Tab 2</div>
+        <div id="tab3" class="tab-pane">Content for Tab 3</div>
+        <!-- <ImageDialog title={title} image={image} client:load>
+          <div class="flex justify-center items-center">
+            <Image src={images[image]()} alt={`image`} width={600} height={400}/>
+          </div>
+        </ImageDialog> -->
+      </div>
+    </div>
+  </div>
+  <script is:inline>
+    function activateTab() {
+        // Remove active class from all tabs and tab content
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+  
+        // Get the current hash
+        let hash = window.location.hash;
+  
+        // If there is no hash, default to the first tab
+        if (!hash) {
+            hash = '#tab1';
+            window.location.hash = hash;
+        }
+  
+        // Activate the tab and content matching the hash
+        const activeTab = document.querySelector(`.tab[href="${hash}"]`);
+        const activePane = document.querySelector(hash);
+  
+        if (activeTab && activePane) {
+            activeTab.classList.add('active');
+            activePane.classList.add('active');
+        }
+    }
+  
+    // Activate the correct tab on page load
+    activateTab();
+  
+    // Add event listener for hash changes
+    window.addEventListener('hashchange', activateTab);
+  
+  </script>

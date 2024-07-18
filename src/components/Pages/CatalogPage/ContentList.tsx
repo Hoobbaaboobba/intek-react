@@ -4,7 +4,7 @@ import { ContentCard } from "./ContentCard";
 
 export const ContentList = () => {
   const [query, setQuery] = useState<string | null>();
-  const [newQuery, setNewQuery] = useState<string | null>();
+  const [_, setNewQuery] = useState<string | null>();
   useEffect(() => {
     const urlSearchParamsLabel = new URLSearchParams(
       window.location.search,

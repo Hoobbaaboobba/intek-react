@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { Check, ChevronsUpDown } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const select = [
   "Шпатель",
@@ -34,7 +34,7 @@ export const Selector = () => {
   const [value, setValue] = useState("");
 
   const [query, setQuery] = useState<string | null>();
-  const [newQuery, setNewQuery] = useState<string | null>();
+  const [_, setNewQuery] = useState<string | null>();
 
   useEffect(() => {
     const urlSearchParamsLabel = new URLSearchParams(

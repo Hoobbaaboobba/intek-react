@@ -2,8 +2,6 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export const ImageDialog = ({
   children,
-  image,
-  title,
 }: {
   children: React.ReactNode;
   image: string;
