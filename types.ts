@@ -5,7 +5,9 @@ export type Data = {
 };
 
 export type Product = {
-  image: string;
+  image1: string;
+  image2: string;
+  image3: string;
   title: string;
   code: string;
   amount: string;

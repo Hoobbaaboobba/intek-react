@@ -1,6 +1,8 @@
 [
   {
-    "image": "/src/assets/shpatel-proff-40.png",
+    "image1": "/src/assets/shpatel-proff-40.png",
+    "image2": "/src/assets/shpatel-proff-40.png",
+    "image3": "/src/assets/shpatel-proff-40.png",
     "code": "10102-040",
     "title": "Шпатель proff 40 мм нержавеющая сталь пластмассовая ручка",
     "amount": "100",
@@ -20,7 +22,9 @@
     "id": "1"
   },
   {
-    "image": "/src/assets/shpatel-proff-60.png",
+    "image1": "/src/assets/shpatel-proff-60.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-060",
     "title": "Шпатель proff 60 мм нержавеющая сталь пластмассовая ручка",
     "amount": "80",
@@ -40,7 +44,9 @@
     "id": "1"
   },
   {
-    "image": "/src/assets/shpatel-proff-80.png",
+    "image1": "/src/assets/shpatel-proff-80.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-080",
     "title": "Шпатель proff 80 мм нержавеющая сталь пластмассовая ручка",
     "amount": "60",
@@ -60,7 +66,9 @@
     "id": "1"
   },
   {
-    "image": "/src/assets/shpatel-proff-100.png",
+    "image1": "/src/assets/shpatel-proff-100.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-100",
     "title": "Шпатель proff 100 мм нержавеющая сталь пластмассовая ручка",
     "amount": "50",
@@ -80,7 +88,9 @@
     "id": "1"
   },
   {
-    "image": "/src/assets/shpatel-150.png",
+    "image1": "/src/assets/shpatel-150.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-150",
     "title": "Шпатель фасадный 150 мм нержавеющая сталь пластмассовая ручка",
     "amount": "50",
@@ -100,7 +110,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-200.png",
+    "image1": "/src/assets/shpatel-200.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-200",
     "title": "Шпатель фасадный 200 мм нержавеющая сталь пластмассовая ручка",
     "amount": "30",
@@ -120,7 +132,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-250.png",
+    "image1": "/src/assets/shpatel-250.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-250",
     "title": "Шпатель фасадный 250 мм нержавеющая сталь пластмассовая ручка",
     "amount": "25",
@@ -140,7 +154,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-300.png",
+    "image1": "/src/assets/shpatel-300.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-300",
     "title": "Шпатель фасадный 300 мм нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -160,7 +176,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-350.png",
+    "image1": "/src/assets/shpatel-350.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-350",
     "title": "Шпатель фасадный 350 мм нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -180,7 +198,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-450.png",
+    "image1": "/src/assets/shpatel-450.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-450",
     "title": "Шпатель фасадный 450 мм нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -200,7 +220,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-600.png",
+    "image1": "/src/assets/shpatel-600.png",
+    "image2": "",
+    "image3": "",
     "code": "10102-600",
     "title": "Шпатель фасадный 600 мм нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -220,7 +242,9 @@
     "id": "2"
   },
   {
-    "image": "/src/assets/shpatel-zub-150-6x6.png",
+    "image1": "/src/assets/shpatel-zub-150-6x6.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-150-006",
     "title": "Шпатель фасадный 150 мм зуб 6х6 нержавеющая сталь пластмассовая ручка",
     "amount": "50",
@@ -240,7 +264,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-200-6x6.png",
+    "image1": "/src/assets/shpatel-zub-200-6x6.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-200-006",
     "title": "Шпатель фасадный 200 мм зуб 6х6 нержавеющая сталь пластмассовая ручка",
     "amount": "30",
@@ -260,7 +286,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-200-6x6.png",
+    "image1": "/src/assets/shpatel-zub-200-6x6.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-250-006",
     "title": "Шпатель фасадный 250 мм зуб 6х6 нержавеющая сталь пластмассовая ручка",
     "amount": "25",
@@ -280,7 +308,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-300-6x6.png",
+    "image1": "/src/assets/shpatel-zub-300-6x6.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-300-006",
     "title": "Шпатель фасадный 300 мм зуб 6х6 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -300,7 +330,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-350-6x6.png",
+    "image1": "/src/assets/shpatel-zub-350-6x6.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-350-006",
     "title": "Шпатель фасадный 350 мм зуб 6х6 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -320,7 +352,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-150-8x8.png",
+    "image1": "/src/assets/shpatel-zub-150-8x8.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-150-008",
     "title": "Шпатель фасадный 150 мм зуб 8х8 нержавеющая сталь пластмассовая ручка",
     "amount": "50",
@@ -340,7 +374,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-200-8x8.png",
+    "image1": "/src/assets/shpatel-zub-200-8x8.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-200-008",
     "title": "Шпатель фасадный 200 мм зуб 8х8 нержавеющая сталь пластмассовая ручка",
     "amount": "30",
@@ -360,7 +396,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-200-8x8.png",
+    "image1": "/src/assets/shpatel-zub-200-8x8.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-250-008",
     "title": "Шпатель фасадный 250 мм зуб 8х8 нержавеющая сталь пластмассовая ручка",
     "amount": "25",
@@ -380,7 +418,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-300-8x8.png",
+    "image1": "/src/assets/shpatel-zub-300-8x8.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-300-008",
     "title": "Шпатель фасадный 300 мм зуб 8х8 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -400,7 +440,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-350-8x8.png",
+    "image1": "/src/assets/shpatel-zub-350-8x8.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-350-008",
     "title": "Шпатель фасадный 350 мм зуб 8х8 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -420,7 +462,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-150-10x10.png",
+    "image1": "/src/assets/shpatel-zub-150-10x10.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-150-010",
     "title": "Шпатель фасадный 150 мм зуб 10х10 нержавеющая сталь пластмассовая ручка",
     "amount": "50",
@@ -440,7 +484,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-200-10x10.png",
+    "image1": "/src/assets/shpatel-zub-200-10x10.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-200-010",
     "title": "Шпатель фасадный 200 мм зуб 10х10 нержавеющая сталь пластмассовая ручка",
     "amount": "30",
@@ -460,7 +506,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-250-10x10.png",
+    "image1": "/src/assets/shpatel-zub-250-10x10.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-250-010",
     "title": "Шпатель фасадный 250 мм зуб 10х10 нержавеющая сталь пластмассовая ручка",
     "amount": "25",
@@ -480,7 +528,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-300-10x10.png",
+    "image1": "/src/assets/shpatel-zub-300-10x10.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-300-010",
     "title": "Шпатель фасадный 300 мм зуб 10х10 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -500,7 +550,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-zub-350-10x10.png",
+    "image1": "/src/assets/shpatel-zub-350-10x10.png",
+    "image2": "",
+    "image3": "",
     "code": "10103-350-010",
     "title": "Шпатель фасадный 350 мм зуб 10х10 нержавеющая сталь пластмассовая ручка",
     "amount": "10",
@@ -520,7 +572,9 @@
     "id": "3"
   },
   {
-    "image": "/src/assets/shpatel-lopatka-40.png",
+    "image1": "/src/assets/shpatel-lopatka-40.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-040",
     "title": "Шпательная лопатка ПРОФИ \"ИНТЕК\" 40 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "20",
@@ -540,7 +594,9 @@
     "id": "4"
   },
   {
-    "image": "/src/assets/shpatel-lopatka-60.png",
+    "image1": "/src/assets/shpatel-lopatka-60.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-060",
     "title": "Шпательная лопатка ПРОФИ \"ИНТЕК\" 60 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "20",
@@ -560,7 +616,9 @@
     "id": "4"
   },
   {
-    "image": "/src/assets/shpatel-lopatka-80.png",
+    "image1": "/src/assets/shpatel-lopatka-80.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-080",
     "title": "Шпательная лопатка ПРОФИ \"ИНТЕК\" 80 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "20",
@@ -580,7 +638,9 @@
     "id": "4"
   },
   {
-    "image": "/src/assets/shpatel-lopatka-100.png",
+    "image1": "/src/assets/shpatel-lopatka-100.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-100",
     "title": "Шпательная лопатка ПРОФИ \"ИНТЕК\" 100 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "20",
@@ -600,7 +660,9 @@
     "id": "4"
   },
   {
-    "image": "/src/assets/shpatel-proff-150.png",
+    "image1": "/src/assets/shpatel-proff-150.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-150",
     "title": "Шпатель фасадный ПРОФИ 150 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -620,7 +682,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-200.png",
+    "image1": "/src/assets/shpatel-proff-200.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-200",
     "title": "Шпатель фасадный ПРОФИ 200 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -640,7 +704,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-250.png",
+    "image1": "/src/assets/shpatel-proff-250.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-250",
     "title": "Шпатель фасадный ПРОФИ 250 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -660,7 +726,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-300.png",
+    "image1": "/src/assets/shpatel-proff-300.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-300",
     "title": "Шпатель фасадный ПРОФИ 300 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -680,7 +748,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-350.png",
+    "image1": "/src/assets/shpatel-proff-350.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-350",
     "title": "Шпатель фасадный ПРОФИ 350 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -700,7 +770,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-450.png",
+    "image1": "/src/assets/shpatel-proff-450.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-450",
     "title": "Шпатель фасадный ПРОФИ 450 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -720,7 +792,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/shpatel-proff-600.png",
+    "image1": "/src/assets/shpatel-proff-600.png",
+    "image2": "",
+    "image3": "",
     "code": "10122-600",
     "title": "Шпатель фасадный ПРОФИ 600 мм из нержавеющей стали с двухкомпонентной ручкой",
     "amount": "10",
@@ -740,7 +814,9 @@
     "id": "5"
   },
   {
-    "image": "/src/assets/gladilka-130x270.png",
+    "image1": "/src/assets/gladilka-130x270.png",
+    "image2": "",
+    "image3": "",
     "code": "10104-270",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, пластиковая ручка",
     "amount": "24",
@@ -760,7 +836,9 @@
     "id": "6"
   },
   {
-    "image": "/src/assets/gladilka-zub-130x270-4x4.png",
+    "image1": "/src/assets/gladilka-zub-130x270-4x4.png",
+    "image2": "/src/assets/gladilka-zub-130x270-4x4-2.png",
+    "image3": "",
     "code": "10105-270-004",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, зуб 4х4, пластиковая ручка",
     "amount": "24",
@@ -780,7 +858,9 @@
     "id": "7"
   },
   {
-    "image": "/src/assets/gladilka-zub-130x270-6x6.png",
+    "image1": "/src/assets/gladilka-zub-130x270-6x6.png",
+    "image2": "/src/assets/gladilka-zub-130x270-6x6-2.png",
+    "image3": "",
     "code": "10105-270-006",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, зуб 6х6, пластиковая ручка",
     "amount": "24",
@@ -800,7 +880,9 @@
     "id": "7"
   },
   {
-    "image": "/src/assets/gladilka-zub-130x270-8x8.png",
+    "image1": "/src/assets/gladilka-zub-130x270-8x8.png",
+    "image2": "/src/assets/gladilka-zub-130x270-8x8-2.jpg",
+    "image3": "",
     "code": "10105-270-008",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, зуб 8х8, пластиковая ручка",
     "amount": "24",
@@ -820,7 +902,9 @@
     "id": "7"
   },
   {
-    "image": "/src/assets/gladilka-zub-130x270-10x10.png",
+    "image1": "/src/assets/gladilka-zub-130x270-10x10.png",
+    "image2": "/src/assets/gladilka-zub-130x270-10x10-2.png",
+    "image3": "",
     "code": "10105-270-010",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, зуб 10х10, пластиковая ручка",
     "amount": "24",
@@ -840,7 +924,9 @@
     "id": "7"
   },
   {
-    "image": "/src/assets/gladilka-zub-130x270-12x12.png",
+    "image1": "/src/assets/gladilka-zub-130x270-12x12.png",
+    "image2": "",
+    "image3": "",
     "code": "10105-270-012",
     "title": "Гладилка нержавеющая 130 мм х 270 мм, зуб 12х12, пластиковая ручка",
     "amount": "24",
@@ -860,7 +946,9 @@
     "id": "7"
   },
   {
-    "image": "/src/assets/gladilka-plastic-140x280.png",
+    "image1": "/src/assets/gladilka-plastic-140x280.png",
+    "image2": "",
+    "image3": "",
     "code": "10114-280",
     "title": "Гладилка пластиковая для декоративных работ 140 мм х 280 мм, пластиковая ручка",
     "amount": "24",
@@ -880,7 +968,9 @@
     "id": "8"
   },
   {
-    "image": "/src/assets/shpatel-oboinyy-280.png",
+    "image1": "/src/assets/shpatel-oboinyy-280.png",
+    "image2": "",
+    "image3": "",
     "code": "10202-280",
     "title": "Шпатель обойный пластмассовый 280 мм \"СТАНДАРТ\"",
     "amount": "30",
@@ -900,7 +990,9 @@
     "id": "9"
   },
   {
-    "image": "/src/assets/shpatel-nabor-3sht.jpg",
+    "image1": "/src/assets/shpatel-nabor-3sht.png",
+    "image2": "",
+    "image3": "",
     "code": "10201-003",
     "title": "Набор шпателей пластиковых 3шт., 50,100,150 мм",
     "amount": "40",
@@ -920,7 +1012,9 @@
     "id": "10"
   },
   {
-    "image": "/src/assets/setkoderzshatel.png",
+    "image1": "/src/assets/setkoderzshatel.png",
+    "image2": "",
+    "image3": "",
     "code": "10203-003",
     "title": "Сеткодержатель на винтах 230х105 DUO",
     "amount": "30",
@@ -940,7 +1034,9 @@
     "id": "11"
   },
   {
-    "image": "/src/assets/brus-210x105.png",
+    "image1": "/src/assets/brus-210x105.png",
+    "image2": "",
+    "image3": "",
     "code": "10203-002-001",
     "title": "Брус для шлифования 210х105",
     "amount": "30",
@@ -960,7 +1056,9 @@
     "id": "12"
   },
   {
-    "image": "/src/assets/terka-voilok-280x140.png",
+    "image1": "/src/assets/terka-voilok-280x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10204-001-001",
     "title": "Терочная доска 280х140 накладка войлок 8мм",
     "amount": "30",
@@ -980,7 +1078,9 @@
     "id": "13"
   },
   {
-    "image": "/src/assets/terka-rezina-280x140.png",
+    "image1": "/src/assets/terka-rezina-280x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10204-002-001",
     "title": "Терочная доска 280х140 накладка губчатая резина 8мм",
     "amount": "30",
@@ -1000,7 +1100,9 @@
     "id": "13"
   },
   {
-    "image": "/src/assets/terka-gubka-280x140.png",
+    "image1": "/src/assets/terka-gubka-280x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10204-004-001",
     "title": "Терочная доска 280х140 с мягкой губчатой накладкой 20мм",
     "amount": "30",
@@ -1020,7 +1122,9 @@
     "id": "13"
   },
   {
-    "image": "/src/assets/terka-tverdaya-gubka-280x140.png",
+    "image1": "/src/assets/terka-tverdaya-gubka-280x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10204-003-001",
     "title": "Терочная доска 280х140 с твердой губчатой накладкой 20мм",
     "amount": "30",
@@ -1040,7 +1144,9 @@
     "id": "13"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-008-026",
     "title": "Тёрка ППУ 80х260 мм",
     "amount": "40",
@@ -1060,7 +1166,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/terka-ppu-120x240.png",
+    "image1": "/src/assets/terka-ppu-120x240.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-012-024",
     "title": "Тёрка ППУ 120х240 мм",
     "amount": "20",
@@ -1080,7 +1188,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/terka-ppu-140x230.png",
+    "image1": "/src/assets/terka-ppu-140x230.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-014-023",
     "title": "Тёрка ППУ 140х230 мм",
     "amount": "40",
@@ -1100,7 +1210,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/terka-ppu-140x280.png",
+    "image1": "/src/assets/terka-ppu-140x280.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-014-028",
     "title": "Тёрка ППУ 140х280 мм",
     "amount": "50",
@@ -1120,7 +1232,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-015-035",
     "title": "Тёрка ППУ 150х350 мм",
     "amount": "30",
@@ -1140,7 +1254,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/terka-ppu-180x320.png",
+    "image1": "/src/assets/terka-ppu-180x320.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-018-032",
     "title": "Тёрка ППУ 180х320 мм",
     "amount": "25",
@@ -1160,7 +1276,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/terka-ppu-200x360.png",
+    "image1": "/src/assets/terka-ppu-200x360.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-020-036",
     "title": "Тёрка ППУ 200х360 мм",
     "amount": "20",
@@ -1180,7 +1298,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-022-042",
     "title": "Тёрка ППУ 220х420 мм",
     "amount": "25",
@@ -1200,7 +1320,9 @@
     "id": "14"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-010-040",
     "title": "Полутерок ППУ 100х400 мм",
     "amount": "45",
@@ -1220,7 +1342,9 @@
     "id": "15"
   },
   {
-    "image": "/src/assets/terka-ppu-110x600.png",
+    "image1": "/src/assets/terka-ppu-110x600.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-011-060",
     "title": "Полутерок ППУ 110х600 мм",
     "amount": "15",
@@ -1240,7 +1364,9 @@
     "id": "15"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-012-080",
     "title": "Полутерок ППУ 120х800 мм",
     "amount": "12",
@@ -1260,7 +1386,9 @@
     "id": "15"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-012-100",
     "title": "Полутерок ППУ 120х1000 мм",
     "amount": "12",
@@ -1280,7 +1408,9 @@
     "id": "15"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10101-017-060",
     "title": "Полутерок ППУ 170х600 мм",
     "amount": "10",
@@ -1300,7 +1430,9 @@
     "id": "15"
   },
   {
-    "image": "/src/assets/kist-maclovica-50x140.png",
+    "image1": "/src/assets/kist-maclovica-50x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10301-140-050",
     "title": "Кисть макловица 50x140мм искусственная щетина пластиковое основание",
     "amount": "50",
@@ -1320,7 +1452,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-70x150.png",
+    "image1": "/src/assets/kist-maclovica-70x150.png",
+    "image2": "",
+    "image3": "",
     "code": "10301-150-070",
     "title": "Кисть макловица 70x150мм искусственная щетина пластиковое основание",
     "amount": "40",
@@ -1340,7 +1474,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-70x170.png",
+    "image1": "/src/assets/kist-maclovica-70x170.jpg",
+    "image2": "",
+    "image3": "",
     "code": "10301-170-070",
     "title": "Кисть макловица 70x170мм искусственная щетина пластиковое основание",
     "amount": "35",
@@ -1360,7 +1496,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-80x180.png",
+    "image1": "/src/assets/kist-maclovica-80x180.png",
+    "image2": "",
+    "image3": "",
     "code": "10301-180-080",
     "title": "Кисть макловица 80x180мм искусственная щетина пластиковое основание",
     "amount": "30",
@@ -1380,7 +1518,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-derevo-50x140.png",
+    "image1": "/src/assets/kist-maclovica-derevo-50x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-140-050",
     "title": "Кисть макловица 50x140мм искусственная щетина деревянное основание",
     "amount": "50",
@@ -1400,7 +1540,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-derevo-70x150.png",
+    "image1": "/src/assets/kist-maclovica-derevo-70x150.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-150-070 ",
     "title": "Кисть макловица 70x150мм искусственная щетина деревянное основание",
     "amount": "40",
@@ -1420,7 +1562,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-derevo-70x170.png",
+    "image1": "/src/assets/kist-maclovica-derevo-70x170.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-170-070",
     "title": "Кисть макловица 70x170мм искусственная щетина деревянное основание",
     "amount": "35",
@@ -1440,7 +1584,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-derevo-80x180..png",
+    "image1": "/src/assets/kist-maclovica-derevo-80x180.jpg",
+    "image2": "",
+    "image3": "",
     "code": "10304-180-080 ",
     "title": "Кисть макловица 80x180мм искусственная щетина деревянное основание",
     "amount": "30",
@@ -1460,7 +1606,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kist-maclovica-derevo-50x140.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-140-050-1",
     "title": "Кисть макловица 50x140мм палитра искусственная щетина деревянное основание",
     "amount": "50",
@@ -1480,7 +1628,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kist-maclovica-derevo-70x150.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-150-070-1",
     "title": "Кисть макловица 70x150мм палитра искусственная щетина деревянное основание",
     "amount": "40",
@@ -1500,7 +1650,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kist-maclovica-derevo-70x170.png",
+    "image2": "",
+    "image3": "",
     "code": "10304-170-070-1",
     "title": "Кисть макловица 70x170мм палитра искусственная щетина деревянное основание",
     "amount": "35",
@@ -1520,7 +1672,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kist-maclovica-derevo-80x180.jpg",
+    "image2": "",
+    "image3": "",
     "code": "10304-180-080-1",
     "title": "Кисть макловица 80x180мм палитра искусственная щетина деревянное основание",
     "amount": "30",
@@ -1540,7 +1694,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/kist-maclovica-krug-d105.png",
+    "image1": "/src/assets/kist-maclovica-krug-d105.png",
+    "image2": "",
+    "image3": "",
     "code": "10301-105",
     "title": "Кисть макловица круглая D105мм искусственная щетина пластиковое основание",
     "amount": "30",
@@ -1560,7 +1716,9 @@
     "id": "16"
   },
   {
-    "image": "/src/assets/shetka-270.png",
+    "image1": "/src/assets/shetka-270.png",
+    "image2": "",
+    "image3": "",
     "code": "10303-270",
     "title": "Щетка для пола 270мм искусственная щетина, пластиковое основание",
     "amount": "30",
@@ -1580,7 +1738,9 @@
     "id": "17"
   },
   {
-    "image": "/src/assets/shetka-derevo-300.png",
+    "image1": "/src/assets/shetka-derevo-300.png",
+    "image2": "",
+    "image3": "",
     "code": "10303-300",
     "title": "Щетка для подметания (улица) 300 мм",
     "amount": "36",
@@ -1600,7 +1760,9 @@
     "id": "18"
   },
   {
-    "image": "/src/assets/shetka-derevo-400.png",
+    "image1": "/src/assets/shetka-derevo-400.png",
+    "image2": "",
+    "image3": "",
     "code": "10303-400",
     "title": "Щетка для подметания (улица) 400 мм",
     "amount": "38",
@@ -1620,7 +1782,9 @@
     "id": "18"
   },
   {
-    "image": "/src/assets/shetka-derevo-500.png",
+    "image1": "/src/assets/shetka-derevo-500.png",
+    "image2": "",
+    "image3": "",
     "code": "10303-500",
     "title": "Щетка для подметания (улица) 500 мм",
     "amount": "20",
@@ -1640,7 +1804,9 @@
     "id": "18"
   },
   {
-    "image": "/src/assets/shetka-derevo-600.png",
+    "image1": "/src/assets/shetka-derevo-600.png",
+    "image2": "",
+    "image3": "",
     "code": "10303-600",
     "title": "Щетка для подметания (улица) 600 мм",
     "amount": "18",
@@ -1660,7 +1826,9 @@
     "id": "18"
   },
   {
-    "image": "/src/assets/shpatel-zub-80-s2-5x4.png",
+    "image1": "/src/assets/shpatel-zub-80-s2-5x4.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-080-005",
     "title": "Шпатель прямой 80 мм S2 зуб 5х4мм",
     "amount": "45",
@@ -1680,7 +1848,9 @@
     "id": "19"
   },
   {
-    "image": "/src/assets/shpatel-zub-80-s3-5x2.png",
+    "image1": "/src/assets/shpatel-zub-80-s3-5x2.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-080-002",
     "title": "Шпатель прямой 80мм S3 зуб 2,5х2мм",
     "amount": "45",
@@ -1700,7 +1870,9 @@
     "id": "19"
   },
   {
-    "image": "/src/assets/shpatel-zub-180-s4-10x5.png",
+    "image1": "/src/assets/shpatel-zub-180-s4-10x5.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-180-010",
     "title": "Шпатель прямая трапеция 180 мм S4 зуб 10х5мм",
     "amount": "25",
@@ -1720,7 +1892,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-180-s2-5x4.png",
+    "image1": "/src/assets/shpatel-zub-180-s2-5x4.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-180-005",
     "title": "Шпатель прямая трапеция 180 мм S2 зуб 5х4мм",
     "amount": "25",
@@ -1740,7 +1914,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-180-s3-5x2.png",
+    "image1": "/src/assets/shpatel-zub-180-s3-5x2.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-180-002",
     "title": "Шпатель прямая трапеция 180 мм S3 зуб 2,5х2мм",
     "amount": "25",
@@ -1760,7 +1936,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-180-b3-4x3.png",
+    "image1": "/src/assets/shpatel-zub-180-b3-4x3.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-180-007",
     "title": "Шпатель прямая трапеция 180 мм В3 зуб 3,4х3,6х3,2",
     "amount": "25",
@@ -1780,7 +1958,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-180-b6-4x3.png",
+    "image1": "/src/assets/shpatel-zub-180-b6-4x3.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-180-009",
     "title": "Шпатель прямая трапеция 180 мм В6 зуб 5х4х3,6мм",
     "amount": "25",
@@ -1800,7 +1980,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-250-s4-10x5.png",
+    "image1": "/src/assets/shpatel-zub-250-s4-10x5.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-250-010",
     "title": "Шпатель прямая трапеция 250 мм S4 зуб 10х5мм",
     "amount": "25",
@@ -1820,7 +2002,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-250-s2-5x4.png",
+    "image1": "/src/assets/shpatel-zub-250-s2-5x4.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-250-005",
     "title": "Шпатель прямая трапеция 250 мм S2 зуб 5х4мм",
     "amount": "25",
@@ -1840,7 +2024,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/shpatel-zub-250-s3-5x2.png",
+    "image1": "/src/assets/shpatel-zub-250-s3-5x2.png",
+    "image2": "",
+    "image3": "",
     "code": "10109-250-002",
     "title": "Шпатель прямая трапеция 250 мм S3 зуб 2,5х2мм",
     "amount": "25",
@@ -1860,7 +2046,9 @@
     "id": "20"
   },
   {
-    "image": "/src/assets/kelma-polukrug-220.png",
+    "image1": "/src/assets/kelma-polukrug-220.png",
+    "image2": "",
+    "image3": "",
     "code": "10775-220",
     "title": "Кельма полукруглая 220 мм ",
     "amount": "25",
@@ -1880,7 +2068,9 @@
     "id": "21"
   },
   {
-    "image": "/src/assets/kelma-polukrug-220.png",
+    "image1": "/src/assets/kelma-polukrug-200.png",
+    "image2": "",
+    "image3": "",
     "code": "10775-200",
     "title": "Кельма полукруглая 200мм",
     "amount": "25",
@@ -1900,7 +2090,9 @@
     "id": "21"
   },
   {
-    "image": "/src/assets/kelma-polukrug-180.png",
+    "image1": "/src/assets/kelma-polukrug-180.png",
+    "image2": "",
+    "image3": "",
     "code": "10775-180",
     "title": "Кельма полукруглая 180мм",
     "amount": "25",
@@ -1920,7 +2112,9 @@
     "id": "21"
   },
   {
-    "image": "/src/assets/kelma-polukrug-180.png",
+    "image1": "/src/assets/kelma-polukrug-160.png",
+    "image2": "",
+    "image3": "",
     "code": "10775-160",
     "title": "Кельма полукруглая 160мм",
     "amount": "25",
@@ -1940,7 +2134,9 @@
     "id": "21"
   },
   {
-    "image": "/src/assets/kelma-trapecia-200.png",
+    "image1": "/src/assets/kelma-trapecia-200.png",
+    "image2": "",
+    "image3": "",
     "code": "10772-200",
     "title": "Кельма трапеция 200мм",
     "amount": "25",
@@ -1960,7 +2156,9 @@
     "id": "22"
   },
   {
-    "image": "/src/assets/kelma-trapecia-180.png",
+    "image1": "/src/assets/kelma-trapecia-180.png",
+    "image2": "",
+    "image3": "",
     "code": "10772-180",
     "title": "Кельма трапеция 180мм",
     "amount": "25",
@@ -1980,7 +2178,9 @@
     "id": "22"
   },
   {
-    "image": "/src/assets/kelma-trapecia-180.png",
+    "image1": "/src/assets/kelma-trapecia-160.png",
+    "image2": "",
+    "image3": "",
     "code": "10772-160",
     "title": "Кельма трапеция 160мм",
     "amount": "25",
@@ -2000,7 +2200,9 @@
     "id": "22"
   },
   {
-    "image": "/src/assets/kelma-oval-170.png",
+    "image1": "/src/assets/kelma-oval-170.png",
+    "image2": "",
+    "image3": "",
     "code": "10773-170",
     "title": "Кельма овальная 170мм",
     "amount": "25",
@@ -2020,7 +2222,9 @@
     "id": "23"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kelma-serdce-175.png",
+    "image2": "",
+    "image3": "",
     "code": "10774-175",
     "title": "Кельма сердце 175мм",
     "amount": "25",
@@ -2040,7 +2244,9 @@
     "id": "24"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/kelma-serdce-195.png",
+    "image2": "",
+    "image3": "",
     "code": "10774-195",
     "title": "Кельма сердце 195мм",
     "amount": "25",
@@ -2060,7 +2266,9 @@
     "id": "24"
   },
   {
-    "image": "/src/assets/kelma-treugolnik-200.png",
+    "image1": "/src/assets/kelma-treugolnik-200.png",
+    "image2": "",
+    "image3": "",
     "code": "10771-200",
     "title": "Кельма треугольник 200мм",
     "amount": "25",
@@ -2080,7 +2288,9 @@
     "id": "25"
   },
   {
-    "image": "/src/assets/kelma-treugolnik-200.png",
+    "image1": "/src/assets/kelma-treugolnik-180.png",
+    "image2": "",
+    "image3": "",
     "code": "10771-180",
     "title": "Кельма треугольник 180мм",
     "amount": "25",
@@ -2100,7 +2310,9 @@
     "id": "25"
   },
   {
-    "image": "/src/assets/kelma-treugolnik-200.png",
+    "image1": "/src/assets/kelma-treugolnik-160.png",
+    "image2": "",
+    "image3": "",
     "code": "10771-160",
     "title": "Кельма треугольник 160мм",
     "amount": "25",
@@ -2120,7 +2332,9 @@
     "id": "25"
   },
   {
-    "image": "/src/assets/shpatel-pravilo-600.png",
+    "image1": "/src/assets/shpatel-pravilo-600.png",
+    "image2": "",
+    "image3": "",
     "code": "10155-0600",
     "title": "Шпатель-правило 600 мм из нержавеющей стали с алюминиевой ручкой",
     "amount": "6",
@@ -2140,7 +2354,9 @@
     "id": "26"
   },
   {
-    "image": "/src/assets/shpatel-pravilo-800.png",
+    "image1": "/src/assets/shpatel-pravilo-800.png",
+    "image2": "",
+    "image3": "",
     "code": "10155-0800",
     "title": "Шпатель-правило 800 мм из нержавеющей стали с алюминиевой ручкой",
     "amount": "6",
@@ -2160,7 +2376,9 @@
     "id": "26"
   },
   {
-    "image": "/src/assets/shpatel-pravilo-1000.png",
+    "image1": "/src/assets/shpatel-pravilo-1000.png",
+    "image2": "",
+    "image3": "",
     "code": "10155-1000",
     "title": "Шпатель-правило 1000 мм из нержавеющей стали с алюминиевой ручкой",
     "amount": "6",
@@ -2180,7 +2398,9 @@
     "id": "26"
   },
   {
-    "image": "/src/assets/shpatel-pravilo-1200.png",
+    "image1": "/src/assets/shpatel-pravilo-1200.png",
+    "image2": "",
+    "image3": "",
     "code": "10155-1200",
     "title": "Шпатель-правило 1200 мм из нержавеющей стали с алюминиевой ручкой",
     "amount": "6",
@@ -2200,7 +2420,9 @@
     "id": "26"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10909-086",
     "title": "Шпатель \"ИНТЕК\" фуговальный, резиновый 86 мм",
     "amount": "50",
@@ -2220,7 +2442,9 @@
     "id": "27"
   },
   {
-    "image": "/src/assets/blue-logo-bg.png",
+    "image1": "/src/assets/blue-logo-bg.png",
+    "image2": "",
+    "image3": "",
     "code": "10909-126",
     "title": "Шпатель \"ИНТЕК\" фуговальный, резиновый 126 мм",
     "amount": "50",
@@ -2238,45 +2462,5 @@
     "barcode": "4660010623482",
     "slug": "shpatel-intek-fugovalnyy-rezinovyy-126-mm",
     "id": "27"
-  },
-  {
-    "image": "/src/assets/blue-logo-bg.png",
-    "code": "10909-003",
-    "title": "Набор шпателей резиновых \"ИНТЕК\" 40/60/80",
-    "amount": "30",
-    "brutto": "2.36",
-    "netto": "8.694",
-    "width": "205",
-    "height": "90.0",
-    "length": "220.0",
-    "cbm": "0.004059",
-    "fiveToOne": "23.91",
-    "threeToFive": "25.11",
-    "oneToThree": "26.37",
-    "eightToOne": "29.62",
-    "description": "Инструмент позволяет добиться высокой точности в нанесении строительных смесей, в т.ч. быстро затереть меж плиточные швы или нанести ровный слой финишной шпаклевки, а также выполнять другие ремонтно-строительные работы. Набор шпателей изготовлен из белой резины, которая не оставляет следов на поверхности.",
-    "barcode": "4660010623505",
-    "slug": "nabor-shpateley-rezinovyh-intek-40-60-80",
-    "id": "28"
-  },
-  {
-    "image": "/src/assets/blue-logo-bg.png",
-    "code": "10201-004",
-    "title": "Набор шпателей \"ИНТЕК\" 50-80-100-120",
-    "amount": "50",
-    "brutto": "2.36",
-    "netto": "8.694",
-    "width": "205",
-    "height": "90.0",
-    "length": "220.0",
-    "cbm": "0.004059",
-    "fiveToOne": "85.54",
-    "threeToFive": "89.82",
-    "oneToThree": "94.32000000000001",
-    "eightToOne": "105.64",
-    "description": "Благодаря особой форме, шпатели являются незаменимым инструментом при проведении точных работ и финишной отделки, а также для работ в труднодоступных местах. Полотно из нержавеющей стали обеспечивает надежность и долгий срок службы инструментов. Высокая эластичность полотна, пластмассовая ручка.",
-    "barcode": "4660010623536",
-    "slug": "nabor-shpateley-intek-50-80-100-120",
-    "id": "28"
   }
 ]

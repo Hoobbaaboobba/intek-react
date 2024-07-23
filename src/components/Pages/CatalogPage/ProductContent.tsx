@@ -3,7 +3,6 @@ import { ProductSelector } from "./ProductSelector";
 import { useEffect, useState } from "react";
 
 interface ProductContentProps {
-  image: string;
   code: string;
   id: string;
   title: string;
@@ -48,13 +47,13 @@ export const ProductContent = ({
     setQuery(urlSearchParams);
   }, []);
   return (
-    <div className="w-full">
+    <div className="w-full min-w-[400px] lg:min-w-[650px]">
       <div
         className={`${query === "review" || query === null ? "flex" : "hidden"} flex-col items-start justify-between gap-8 text-dark-gray`}
       >
         <div className="h-full space-y-2">
           <h1 className="text-2xl font-semibold sm:text-3xl">{title}</h1>
-          <p className="text-sm">{description}</p>
+          <p className="text-lg leading-6">{description}</p>
         </div>
         <ProductSelector data={selectorData} current={title} />
       </div>

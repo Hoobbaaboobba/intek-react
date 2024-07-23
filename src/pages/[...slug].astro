@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import SameProducts from '@/components/Pages/CatalogPage/SameProducts.astro'
+import {getImages} from '@/lib/utils'
 
 import pagesData from '../../pagesData.json'
 
@@ -11,29 +12,31 @@ import {ProductContent} from '@/components/Pages/CatalogPage/ProductContent'
 import {QueryButtons} from '@/components/Pages/CatalogPage/QueryButtons'
 import { Separator } from "@/components/ui/separator";
 import type { ImageMetadata } from 'astro';
+import { SubImageDialog } from "@/components/Pages/CatalogPage/SubImageDialog";
+import { getCollection } from "astro:content";
 
 
 export async function getStaticPaths() {
+    const albums = await getCollection("assets");
+
     const pages = pagesData
 
-    return pages.map(({slug, id, image, code, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode}) => {
+    return pages.map(({slug, id, image1, image2, image3, code, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode}) => {
       return {
         params: { 
            slug
          },
-        props: {  image, code, id, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode },
+        props: {  image1, image2, image3, code, id, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode, slug },
       };
   });
 }
 
 
-const {image, code, id, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode } = Astro.props
+const {image1, image2, image3, slug, code, id, title, amount, brutto, netto, width, height, length, cbm, fiveToOne, threeToFive, oneToThree, eightToOne, description, barcode } = Astro.props
 
 export const prerender = true;
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif,webp}')
-
-if (!images[image]) throw new Error(`"${image}" does not exist in glob: "/src/assets/*.{jpeg,jpg,png,gif,webp}"`);
+const images = await getImages(slug);
 
 const selectorData = pagesData.filter(e => e.id === id)
 
@@ -56,7 +59,6 @@ const selectorData = pagesData.filter(e => e.id === id)
       <div class="flex flex-col-reverse md:flex-row w-full justify-center md:justify-between items-center md:items-start gap-8 h-full mt-4">
         <ProductContent
           selectorData={selectorData}
-          image={image}
           code={code}
           id={id}
           title={title}
@@ -75,11 +77,29 @@ const selectorData = pagesData.filter(e => e.id === id)
           barcode={barcode}
           client:load
         />
-        <ImageDialog title={title} image={image} client:load>
-          <div class="flex justify-center items-center">
-            <Image src={images[image]()} alt={`image`} width={600} height={400}/>
+        <div class="flex flex-col gap-2 xl:flex-row">
+          <ImageDialog client:load>
+            <div class="flex justify-center items-center max-w-[700px]">
+              <Image src={images[0]} alt={title} widths={[240, 540, 800]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 600px, ${images[0].width}px`}/>
+            </div>
+          </ImageDialog>
+          <div class="flex flex-row lg:flex-col gap-2">
+            {images[1] && (
+              <SubImageDialog client:load>
+                <div class="flex justify-center items-center">
+                  <Image src={images[1]} alt={title}/>
+                </div>
+              </SubImageDialog>
+            )}
+            {images[2] && (
+              <SubImageDialog client:load>
+                  <div class="flex justify-center items-center">
+                      <Image src={images[2]} alt={title}/>
+                  </div>
+              </SubImageDialog>
+            )}
           </div>
-        </ImageDialog>
+        </div>
       </div>
     </div>
   </div>

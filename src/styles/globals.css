@@ -123,6 +123,44 @@
   transition: 150ms;
 }
 
+.tabs {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tab:hover,
+.tab.active {
+  background-color: #f0f0f0;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
 @layer base {
   :root {
     --main-blue: #1f79f8;

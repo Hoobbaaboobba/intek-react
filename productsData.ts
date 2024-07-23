@@ -49,7 +49,7 @@ export const data: Data[] = [
     href: "/shpatel-oboynyy-plastmassovyy-280-mm-standart",
   },
   {
-    img: "shpatel-nabor-3sht.jpg",
+    img: "shpatel-nabor-3sht.png",
     title: "Набор шпателей пластиковых 3шт.",
     href: "/nabor-shpateley-plastikovyh-3sht",
   },
@@ -134,7 +134,7 @@ export const data: Data[] = [
     href: "/kelma-ovalnaya-170mm",
   },
   {
-    img: "blue-logo-bg.png",
+    img: "kelma-serdtse-175.png",
     title: "Кельма сердце",
     href: "/kelma-serdtse-175mm",
   },
@@ -152,15 +152,5 @@ export const data: Data[] = [
     img: "blue-logo-bg.png",
     title: 'Шпатель "ИНТЕК" фуговальный, резиновый',
     href: "/shpatel-intek-fugovalnyy-rezinovyy-86-mm",
-  },
-  {
-    img: "blue-logo-bg.png",
-    title: 'Набор шпателей резиновых "ИНТЕК" 40/60/80',
-    href: "/nabor-shpateley-rezinovyh-intek-40-60-80",
-  },
-  {
-    img: "blue-logo-bg.png",
-    title: "Набор шпателей Интек 50-80-100-120",
-    href: "/nabor-shpateley-intek-50-80-100-120",
   },
 ];

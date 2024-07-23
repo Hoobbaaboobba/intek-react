@@ -6,7 +6,7 @@ export const ContentCard = (item: Data) => {
     <a href={item.href} className="group h-full w-full border bg-white">
       <div className="relative flex h-full w-full items-center justify-center">
         <img
-          src={`/${item.img}`}
+          src={`/src/assets${item.href}/${item.img}`}
           alt={item.title}
           className="aspect-[10/9] -translate-y-8 scale-75"
         />
