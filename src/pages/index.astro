@@ -6,6 +6,7 @@ import StorageSection from '@/components/Pages/MainPage/StorageSection/StorageSe
 import CatalogSection from '@/components/Pages/MainPage/CatalogSection/CatalogSection.astro'
 import SliderSection from '@/components/Pages/MainPage/SliderSection/Slider'
 import YandexMapSection from '@/components/Pages/MainPage/YandexMapSection/YandexMapSection.astro'
+import { DiagrammAmount } from '@/components/Pages/MainPage/Diagramm/DiagrammAmount';
 ---
 
 <Layout 
@@ -30,7 +31,7 @@ import YandexMapSection from '@/components/Pages/MainPage/YandexMapSection/Yande
 	<StorageSection />
 	<CatalogSection />
 	<SliderSection client:load/>
-	<!-- <DiagrammAmount client:visible/>
-	<DiagrammIncome client:visible/> -->
+	<DiagrammAmount client:visible/>
+	<!--<DiagrammIncome client:visible/> -->
 	<YandexMapSection />
 </Layout>
