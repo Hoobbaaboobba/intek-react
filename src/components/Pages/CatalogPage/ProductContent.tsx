@@ -47,7 +47,7 @@ export const ProductContent = ({
     setQuery(urlSearchParams);
   }, []);
   return (
-    <div className="w-full min-w-[400px] lg:min-w-[650px]">
+    <div className="w-full sm:min-w-[400px] lg:min-w-[650px]">
       <div
         className={`${query === "review" || query === null ? "flex" : "hidden"} flex-col items-start justify-between gap-8 text-dark-gray`}
       >
