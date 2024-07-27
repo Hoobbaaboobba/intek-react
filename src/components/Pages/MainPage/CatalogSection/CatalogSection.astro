@@ -3,15 +3,16 @@ import BlueSquare from "@/components/Global/BlueSquare.astro";
 import CatalogItems from "./CatalogItems.astro";
 import { Image } from "astro:assets";
 
-import shpatelProf from '../../../../assets/shpatel-fasadnyy-profi-150-mm-iz-nerzhaveyuschey-stali-s-dvuhkomponentnoy-ruchkoy/shpatel-proff-150.png'
-import shpatelpravilo from '../../../../assets/shpatel-pravilo-600-mm-iz-nerzhaveyuschey-stali-s-alyuminievoy-ruchkoy/shpatel-pravilo-600.png'
-import shpatel40 from '../../../../assets/shpatel-40-mm-nerzhaveyuschaya-stal-plastmassovaya-ruchka/shpatel-proff-40.png'
+import shpatelProf from '../../../../assets/shpatel-fasadnyy-profi-150-mm-iz-nerzhaveyuschey-stali-s-dvuhkomponentnoy-ruchkoy/shpatel-proff-150-1.png'
+import shpatelpravilo from '../../../../assets/shpatel-pravilo-600-mm-iz-nerzhaveyuschey-stali-s-alyuminievoy-ruchkoy/shpatel-pravilo-600-1.png'
+import shpatel40 from '../../../../assets/shpatel-40-mm-nerzhaveyuschaya-stal-plastmassovaya-ruchka/shpatel-lopatka-40-1.png'
 import gladilka from '../../../../assets/gladilka-nerzhaveyuschaya-130-mm-h-270-mm-plastikovaya-ruchka/gladilka-130x270.png'
 import brus from '../../../../assets/brus-dlya-shlifovaniya-210h105/brus-210x105.png'
-import terochnaya from '../../../../assets/terochnaya-doska-280h140-s-myagkoy-gubchatoy-nakladkoy-20mm/terka-gubka-280x140.png'
+import terochnaya from '../../../../assets/terochnaya-doska-280h140-s-myagkoy-gubchatoy-nakladkoy-20mm/terka-gubka-280x140-1.jpg'
 import terkappu from '../../../../assets/terka-ppu-120h240-mm/terka-ppu-120x240.png'
-import shetka from '../../../../assets/schetka-dlya-podmetaniya-ulitsa-300-mm/shetka-derevo-300.png'
+import shetka from '../../../../assets/schetka-dlya-podmetaniya-ulitsa-300-mm/shetka-derevo-300-1.png'
 import kelma from '../../../../assets/kelma-polukruglaya-220-mm/kelma-polukrug-220.png'
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const items = [
   {
@@ -71,20 +72,26 @@ const items = [
         <div class="gap grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:gap-8">
           <a
             href="/shpatel-fasadnyy-profi-150-mm-iz-nerzhaveyuschey-stali-s-dvuhkomponentnoy-ruchkoy"
-            class="relative h-full w-full overflow-hidden border border-border"
+            class="relative h-full w-full overflow-hidden"
           >
-            <Image
-              src={shpatelProf}
-              alt="Шпатель фасадный Proff 150 мм"
-              width='700'
-              height='500'
-              format="avif"
-              class='w-full h-full sm:w-[700px] sm:h-[500px]'
-            />
-            <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border bg-white text-center text-dark-gray transition sm:text-xl">
-              <div class="w-full p-2">Шпатель фасадный ПРОФИ 150 мм</div>
-              <BlueSquare />
-            </div>
+          <Card className="relative max-h-[700px]">
+            <CardContent>
+              <Image
+                src={shpatelProf}
+                alt="Шпатель фасадный Proff 150 мм"
+                width='700'
+                height='700'
+                format="avif"
+                class='w-full h-full sm:w-[700px] sm:h-[500px]'
+              />
+            </CardContent>
+            <CardFooter className="h-[64px]">
+              <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border-t border-r bg-white text-center text-dark-gray transition sm:text-xl">
+                <div class="w-full p-2">Шпатель фасадный ПРОФИ 150 мм</div>
+                <BlueSquare />
+              </div>
+            </CardFooter>
+          </Card>
           </a>
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:gap-8">
             {items.slice(0, 4).map((item) => (

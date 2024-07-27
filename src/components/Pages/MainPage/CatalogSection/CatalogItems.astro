@@ -1,5 +1,6 @@
 ---
 import BlueSquare from "@/components/Global/BlueSquare.astro";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Image } from "astro:assets";
 
 interface Props {
@@ -12,17 +13,23 @@ const {image, title, href}:Props = Astro.props
 ---
     <a
       href={`/${href}`}
-      class="group relative h-full w-full overflow-hidden border border-border"
+      class="group relative h-full w-full overflow-hidden"
     >
-      <Image
-        src={image}
-        alt={title}
-        width='301'
-        format="avif"
-        height='216'
-      />
-      <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border bg-white text-center text-dark-gray transition">
-        <div class="w-full p-2 text-center text-sm">{title}</div>
-        <BlueSquare />
-      </div>
+    <Card className="relative max-h-[279px]">
+      <CardContent>
+        <Image
+          src={image}
+          alt={title}
+          width='210'
+          format="avif"
+          height='200'
+        />
+      </CardContent>
+      <CardFooter className="h-[64px]">
+        <div class="text-md absolute bottom-0 left-0 flex h-[64px] w-[90%] cursor-pointer items-center justify-center border bg-white text-center text-dark-gray transition">
+          <div class="w-full p-2 text-center text-sm">{title}</div>
+          <BlueSquare />
+        </div>
+      </CardFooter>
+    </Card>
     </a>
