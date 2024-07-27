@@ -1,33 +1,50 @@
 import { Button } from "@/components/ui/button";
 
+import {
+  Home,
+  LayoutGrid,
+  Package,
+  FileBox,
+  BookOpenText,
+  Globe,
+  PhoneCall,
+} from "lucide-react";
+
 export const buttons = [
   {
     title: "Главная",
     href: "/",
+    icon: <Home />,
   },
   {
     title: "Каталог",
     href: "/katalog-tovarov",
+    icon: <LayoutGrid />,
   },
   {
     title: "Доставка",
     href: "/dostavka-i-oplata",
+    icon: <Package />,
   },
   {
     title: "Партнеры",
     href: "/partnery",
+    icon: <FileBox />,
   },
   {
     title: "О компании",
     href: "/o-kompanii",
+    icon: <BookOpenText />,
   },
   {
     title: "Новости",
     href: "/novosty",
+    icon: <Globe />,
   },
   {
     title: "Контакты",
     href: "/kontakt",
+    icon: <PhoneCall />,
   },
 ];
 

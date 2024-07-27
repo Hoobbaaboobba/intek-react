@@ -54,7 +54,7 @@ export const Selector = () => {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full justify-between rounded-md"
+          className="w-full justify-between rounded-md border border-main-blue"
         >
           {query ? query : "Выбрать товар..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />

@@ -34,7 +34,7 @@ export const ProductSelector = ({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[290px] rounded-md"
+          className="w-[290px] rounded-md border-main-blue"
         >
           {"Выбрать товар..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />

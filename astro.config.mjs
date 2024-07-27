@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://intek-react.vercel.app/",
+  site: "https://intek-tool.ru/",
   integrations: [
     tailwind({
       applyBaseStyles: false,
