@@ -17,7 +17,7 @@ export const QueryButtons = () => {
     <>
       <Button
         size="icon"
-        className="h-8 w-8 rounded-full bg-main-blue text-white"
+        className="h-8 w-8 rounded-none bg-main-blue text-white"
         asChild
       >
         <a href="/katalog-tovarov">

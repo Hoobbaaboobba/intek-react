@@ -60,6 +60,7 @@ const MenuButtons = ({ url, more40, isFit }: Props) => {
     <div className="hidden xl:block">
       {buttons.map((button, index) => (
         <Button
+          asChild
           key={index}
           className={`highlighted ${isFit ? (more40 ? "text-dark" : "text-white") : "text-dark"} text-md ${
             splittedUrl === button.href.split("/")[1]

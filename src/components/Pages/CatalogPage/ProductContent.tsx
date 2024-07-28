@@ -53,7 +53,7 @@ export const ProductContent = ({
       >
         <div className="h-full space-y-2">
           <h1 className="text-2xl font-semibold sm:text-3xl">{title}</h1>
-          <p className="text-lg leading-6">{description}</p>
+          <p className="text-lg leading-6 text-black/60">{description}</p>
         </div>
         <ProductSelector data={selectorData} current={title} />
       </div>

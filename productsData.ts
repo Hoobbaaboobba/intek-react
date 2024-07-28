@@ -29,6 +29,11 @@ export const data: Data[] = [
     href: "/shpatel-fasadnyy-profi-150-mm-iz-nerzhaveyuschey-stali-s-dvuhkomponentnoy-ruchkoy",
   },
   {
+    img: "shpatel-profi-duo-150-mm-2.png",
+    title: "Шпатель ПРОФИ DUO 150 мм",
+    href: "/shpatel-profi-duo-150-mm",
+  },
+  {
     img: "gladilka-130х270-2.png",
     title: "Гладилка нержавеющая пластиковая ручка",
     href: "/gladilka-nerzhaveyuschaya-130-mm-h-270-mm-plastikovaya-ruchka",

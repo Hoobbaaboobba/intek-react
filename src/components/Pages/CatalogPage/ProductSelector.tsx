@@ -34,7 +34,7 @@ export const ProductSelector = ({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[290px] rounded-md border-main-blue"
+          className="w-[290px] border-main-blue"
         >
           {"Выбрать товар..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
@@ -42,7 +42,7 @@ export const ProductSelector = ({
       </PopoverTrigger>
       <PopoverContent
         align="start"
-        className="max-h-[300px] overflow-y-auto p-0"
+        className="max-h-[300px] overflow-y-auto rounded-none p-0"
       >
         <Command>
           <CommandInput placeholder="Найти товар..." />
