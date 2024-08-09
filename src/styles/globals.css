@@ -21,6 +21,10 @@
   background-position: 50% 20%;
 }
 
+.main-bg-image {
+  background-position: 50% 25%;
+}
+
 .dash::before {
   content: "";
   display: flex;

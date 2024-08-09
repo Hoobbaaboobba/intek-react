@@ -29,8 +29,8 @@ const Header = ({ url }: Props) => {
     <header
       className={`${
         navbar ? "bg-white/80 lg:translate-y-[-50px]" : "lg:translate-y-0"
-      } } fixed left-0 top-0 z-30 flex w-full items-center 
-      justify-center bg-transparent shadow-md backdrop-blur-lg transition`}
+      } fixed left-0 top-0 z-30 flex w-full items-center 
+      justify-center bg-transparent shadow-md backdrop-blur-sm transition`}
     >
       <div className="w-full px-8 py-4 lg:px-12">
         <Contacts isFit={isFit} />

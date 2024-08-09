@@ -30,7 +30,7 @@ export const data: Data[] = [
   },
   {
     img: "shpatel-profi-duo-150-mm-2.png",
-    title: "Шпатель ПРОФИ DUO 150 мм",
+    title: "Шпатель ПРОФИ DUO",
     href: "/shpatel-profi-duo-150-mm",
   },
   {
@@ -69,7 +69,7 @@ export const data: Data[] = [
     href: "/brus-dlya-shlifovaniya-210h105",
   },
   {
-    img: "terka-voilok-280x140.png",
+    img: "terka-voilok-280x140-2.png",
     title: "Терочная доска накладка войлок",
     href: "/terochnaya-doska-280h140-nakladka-voylok-8mm",
   },
@@ -102,6 +102,11 @@ export const data: Data[] = [
     img: "kist-maclovica-50x140.png",
     title: "Кисть макловица искусственная щетина пластиковое основание",
     href: "/kist-maklovitsa-50x140mm-iskusstvennaya-schetina-plastikovoe-osnovanie",
+  },
+  {
+    img: "kist-maclovica-derevo-70x150.png",
+    title: "Кисть макловица искусственная щетина деревянное основание",
+    href: "/kist-maklovitsa-70x150mm-palitra-iskusstvennaya-schetina-derevyannoe-osnovanie",
   },
   {
     img: "shetka-270-1.png",

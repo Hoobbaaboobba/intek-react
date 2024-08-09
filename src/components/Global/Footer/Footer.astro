@@ -18,16 +18,8 @@ const mainButtons = [
         href: '/dostavka-i-oplata',
     },
     {
-        label: 'Партнёры',
-        href: '/partnery',
-    },
-    {
         label: 'О компании',
         href: '/o-kompanii',
-    },
-    {
-        label: 'Новости',
-        href: '/novosty',
     },
     {
         label: 'Контакты',
@@ -39,7 +31,7 @@ const mainButtons = [
     },
 ]
 
-const catalogButtons = [
+export const catalogButtons = [
     {
         label: 'Шпателя',
         href: '/katalog-tovarov?label=Шпатель',
@@ -86,22 +78,11 @@ const catalogButtons = [
     },
 ]
 
-const otherButtons = [
-    {
-        label: 'Новая продукция',
-        href: '/'
-    },
-    {
-        label: 'Товары со скидкой',
-        href: '/'
-    },
-]
-
 ---
 
 <footer class="w-full bg-black flex justify-center items-center py-16 px-4">
     <div class="w-full flex-col max-w-[1300px] flex justify-center items-center">
-        <div class="w-full flex flex-col md:flex-row justify-center items-center text-center md:text-start md:items-start md:justify-between">
+        <div class="w-full flex flex-col gap-4 md:flex-row justify-center items-center md:text-start md:items-start md:justify-between">
             <div class="flex flex-col w-ful">
                 <Image src={whiteLogo} format="avif" alt='Белый логотип ИНТЕК' width={160} height={69} />
                 <ul class="flex flex-col gap-2 mt-4">
@@ -112,7 +93,7 @@ const otherButtons = [
                     ))}
                 </ul>
             </div>
-            <div class="flex flex-col w-ful py-4">
+            <div class="flex flex-col w-ful pb-4">
                 <h2 class="text-white text-xl font-semibold">Каталог товаров</h2>
                 <ul class="flex flex-col gap-2 mt-6">
                     {catalogButtons.map((button) => (
@@ -122,40 +103,21 @@ const otherButtons = [
                     ))}
                 </ul>
             </div>
-            <div class="flex flex-col w-ful py-4">
-                <h2 class="text-white text-xl font-semibold">Прочее</h2>
-                <ul class="flex flex-col gap-2 mt-6">
-                    {otherButtons.map((button) => (
-                        <li class="text-white text-sm">
-                            <a href={button.href} class="footerLinks font-light">{button.label}</a>
-                        </li>
-                    ))}
-                </ul>
+            <div class="flex flex-col w-ful pb-4 ml-10">
+                <h2 class="text-white text-xl font-semibold">Контакты</h2>
+                <p class="text-white max-w-[200px] mt-6">141031, РФ, Московская область, г. Мытищи, д. Сгонники, ул. Промышленная, вл. 7, стр. 8а</p>
+                <a href="tel:+7(499)290-02-58" class="text-white max-w-[200px] mt-2">Тел. отдел продаж: <br/><span class="hover:underline">+7 (499) 290-02-58</span></a>
+                <a href="tel:+7(915)003-83-73" class="text-white max-w-[200px] mt-2">Тел. отдел кадров: <br/><span class="hover:underline">+7 (915) 003-83-73</span></a>
+                <a href="mailto:manager@intek-tool.ru" class="text-white max-w-[200px] mt-2">Почта: <br/><span class="hover:underline">manager@intek-tool.ru</span>
+</a>
             </div>
+ 
         </div>
-        <div class="w-full flex justify-center items-center gap-8 my-6"> 
-            <div class="w-full bg-white h-[1px]"></div>
-            <ul class="flex text-white gap-12">
-                <li>
-                    <a href="/">
-                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <YoutubeIcon className="w-8 h-8 hover:text-main-blue transition"/>
-                    </a>
-                </li>
-            </ul>
-            <div class="w-full bg-white h-[1px]"></div>
-        </div>
-        <span class="text-white font-light">© 2024 ООО «ИНТЕК». Все права защищены.</span>
-        <div class="bg-white w-[150px] h-[1px] my-6"></div>
-        <p class="text-white font-light">Сделано by <span class="text-main-blue font-normal hover:text-main-blue/80 transition">Alexey Matveev</span></p>
-    </div>
+   </div>
 </footer>
+
+<div class="w-full bg-white px-4">
+<div class="container my-6 bg-gray-100 w-full h-[50px] flex justify-center items-center">
+  <p class="text-lg text-light">© 2024 <span class="font-semibold">ООО «ИНТЕК»</span></p>
+</div>
+</div>

@@ -96,9 +96,8 @@ const canonicalURL = Astro.url.href
 		<Header url={canonicalURL} client:load/>
 		<slot />
 		<Separator className='container'/>
-		<NewsSection/>
+		<!--<NewsSection/>-->
 		<ReviewsSection client:load/>
-		<SubscribeSection/>
 		<Footer/>
 	</body>
 </html>

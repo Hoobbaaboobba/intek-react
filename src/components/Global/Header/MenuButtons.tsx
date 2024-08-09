@@ -1,4 +1,10 @@
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 import {
   Home,
@@ -27,19 +33,9 @@ export const buttons = [
     icon: <Package />,
   },
   {
-    title: "Партнеры",
-    href: "/partnery",
-    icon: <FileBox />,
-  },
-  {
     title: "О компании",
     href: "/o-kompanii",
     icon: <BookOpenText />,
-  },
-  {
-    title: "Новости",
-    href: "/novosty",
-    icon: <Globe />,
   },
   {
     title: "Контакты",

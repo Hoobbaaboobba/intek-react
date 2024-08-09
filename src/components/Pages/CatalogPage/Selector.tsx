@@ -71,9 +71,11 @@ export const Selector = () => {
             {select.map((item, index) => (
               <CommandItem
                 key={index}
-                value={item}
+                value={value.split(" ")[0]}
                 onSelect={(currentValue) => {
-                  setValue(currentValue === value ? "" : currentValue);
+                  setValue(
+                    currentValue === value ? "" : currentValue.split(" ")[0],
+                  );
                   setOpen(false);
                 }}
               >

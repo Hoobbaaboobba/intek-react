@@ -40,6 +40,14 @@ export const QueryButtons = () => {
       >
         Техническая информация
       </a>
+      <a
+        href="?q=usage"
+        className={`${
+          query === "usage" ? "under" : "opacity-50"
+        } py-1 text-lg transition hover:opacity-100`}
+      >
+        Применение
+      </a>
     </>
   );
 };

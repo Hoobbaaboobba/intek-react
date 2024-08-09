@@ -29,11 +29,6 @@ export const ProductContent = ({
   width,
   height,
   length,
-  cbm,
-  fiveToOne,
-  threeToFive,
-  oneToThree,
-  eightToOne,
   description,
   selectorData,
 }: ProductContentProps) => {
@@ -80,27 +75,10 @@ export const ProductContent = ({
           <span className="dash">Длина</span>
           <span className="order-2">{parseFloat(length).toFixed(2)}</span>
         </li>
-        <li className="flex">
-          <span className="dash">CBM, m3</span>
-          <span className="order-2">{parseFloat(cbm)}</span>
-        </li>
-        <li className="flex">
-          <span className="dash">500-1 мл.р.</span>
-          <span className="order-2">{parseFloat(fiveToOne).toFixed(2)}</span>
-        </li>
-        <li className="flex">
-          <span className="dash">300-500 т.р.</span>
-          <span className="order-2">{parseFloat(threeToFive).toFixed(2)}</span>
-        </li>
-        <li className="flex">
-          <span className="dash">150-300 т.р.</span>
-          <span className="order-2">{parseFloat(oneToThree).toFixed(2)}</span>
-        </li>
-        <li className="flex">
-          <span className="dash">80-150 т.р. САМОВЫВОЗ</span>
-          <span className="order-2">{parseFloat(eightToOne).toFixed(2)}</span>
-        </li>
       </ul>
+      <div className={`${query === "usage" ? "flex" : "hidden"}`}>
+        <h2>Применение</h2>
+      </div>
     </div>
   );
 };
